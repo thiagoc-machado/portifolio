@@ -19,6 +19,7 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     background-color: rgba(188, 214, 146, 1);
+    cursor:auto;
 }
 
   /* MAIN */
@@ -43,9 +44,10 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
-#inicio .contenido header .contenido-header h1 {
+#inicio .contenido header .contenido-header h1 a{
     text-align: center;
     font-size: large;
+    text-decoration: none;
     color: var(--pri-color);
 }
 #inicio .contenido header .contenido-header nav ul {
@@ -90,13 +92,13 @@ body {
     padding: 80px;
     border-radius: 20px;
     background: rgba(74, 0, 248, 0.2);
-margin: auto;
-color: var(--font-color);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border: 2px solid var(--font-color);
+    margin: auto;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--font-color);
 }
 #inicio .contenido .presentacion .bienvenida {
     font-size: 16px;

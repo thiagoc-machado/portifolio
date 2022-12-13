@@ -20,14 +20,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <div class="contenido">
         <header>
             <div class="contenido-header">
-                <h1>/TM/</h1>
+                <h1><a href="#inicio">/TM/</a></h1>
                 <nav id="nav" class="">
                     <ul id="links">
-                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                        <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                        <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">HOME</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar(this)">PROJECTS</a></li>
                         <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        <li><a href="#game" onclick="seleccionar(this)">GAME</a></li>
                     </ul>
                 </nav>
                 <!-- Iconos del menu responsive -->
@@ -36,15 +35,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </div>
                 <!-- icono de las redes sociales -->
                 <div class="redes">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/thiago-carvalho-machado/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/thiagoc-machado" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/thiagoc.machado/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
         </header>
         <div class="presentacion">
             <div class="box" id="box">
-                <b class="bienvenida">Bienvenidos</b>
+                <b class="bienvenida">Hello</b>
                 <h2>I'm <span>Thiago Machado</span>, Full Stack Developer</h2>
                 <p class="descripcion">I'm passionate about python in the backend and I'm always learning more, currently I'm dedicating myself to learning more about the frontend to improve my designers and learn new frameworks.</p>
                 <a href="#portfolio">Ir a Portfolio</a>
@@ -68,7 +67,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </div>
         <div class="proyecto">
             <div class="overlay"></div>
-            <img src="img/proyecto2.jpg" alt="">
+            <a href="https://triac.info/" target="_blank"><img src="img/proyecto2.jpg"  alt="" ></a>
             <div class="info">
                 <h4>landing page for home appliance maintenance shop</h4>
                 <p>Real project developed in HTML, CSS and Javascript.</p>
@@ -81,7 +80,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <img src="img/proyecto3.jpg" alt="">
             <div class="info">
                 <h4>Coming Soon</h4>
-                <p>Coming Soon</p>
+                <p>Soon there will be another project here</p>
             </div>
         </div>
         <div class="proyecto">
@@ -89,7 +88,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <img src="img/proyecto4.jpg" alt="">
             <div class="info">
                 <h4>Coming Soon</h4>
-                <p>Coming Soon</p>
+                <p>Soon there will be another project here</p>
             </div>
         </div>
     </div>
@@ -97,20 +96,20 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- CONTACT -->
 <section id="contacto">
-    <h3 class="titulo-seccion">Contactanos ahora</h3>
+    <h3 class="titulo-seccion">Send me a message</h3>
     <div class="contenedor-form">
         <form action="">
             <div class="fila mitad">
-                <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                <input type="text" placeholder="Name *" class="input-mitad">
+                <input type="email" placeholder="email@email.com" class="input-mitad">
             </div>
             <div class="fila">
-                <input type="text" placeholder="Tema..." class="input-full">
+                <input type="text" placeholder="Subject" class="input-full">
             </div>
             <div class="fila">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message..." class="input-full"></textarea>
             </div>
-            <input type="submit" id="button" value="Enviar Mensaje" class="btn-enviar">
+            <input type="submit" id="button" value="Send Message" class="btn-enviar">
         </form>
     </div>
 </section>
@@ -134,9 +133,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <footer>
     <p>Todos los derechos reservados - 2022</p>
     <div class="redes">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-square-github"></i></a>
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/thiago-carvalho-machado/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/thiagoc-machado" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/thiagoc.machado/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
     </div>
 </footer>
 <script src="script.js"></script>
