@@ -92,7 +92,7 @@ body {
     padding: 80px;
     border-radius: 20px;
     background: rgba(74, 0, 248, 0.2);
-    margin: auto;
+    margin: 20px;
     color: var(--font-color);
     display: flex;
     flex-direction: column;
@@ -252,51 +252,68 @@ body {
 
 /* GAME */
 .container {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 95%;
-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+    margin-top: -60px;
 }
 
 #score {
-position:absolute;
-top: 5px;
-right: 100px;
-font-size: 2em;
-font-weight: 900;
+    position:absolute;
+    top: 5px;
+    right: 100px;
+    font-size: 2em;
+    font-weight: 900;
 }
 
 #introduction {
-width: 200px;
-height: 120px;
-position: absolute;
-font-weight: 600;
-font-size: 0.8em;
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-text-align: center;
-transition: opacity 2s;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.8em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: opacity 2s;
 }
 
 #restart {
-width: 120px;
-height: 120px;
-position: absolute;
-border-radius: 50%;
-color: white;
-background-color: rgb(17, 75, 19);
-border: none;
-font-weight: 700;
-font-size: 1.2em;
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-display: none;
-cursor: pointer;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(17, 75, 19);
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    cursor: pointer;
 }
 
 #perfect {
-position: absolute;
-opacity: 0;
-transition: opacity 2s;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+}
+#action{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    color:#fff;
+    background: #3944e6;
+    border-radius: 50px;
+}
+#action:active{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    color:#fff;
+    background: #e63942;
+    border-radius: 50px;
 }
 
 /* FOOTER */
@@ -314,3 +331,93 @@ footer a {
     margin: 0px;
     font-size: 26px;
 }
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+    .redes {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+    /* seccion SOBRE MI */
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    /* seccion MIS SERVICIOS */
+    #servicios {
+        padding: 50px 15px;
+    }
+    #servicios .fila {
+        display: block;
+    }
+    #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+    /* seccion HABLIDADES MI */
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+    /* seccion PORTFOLIO */
+    #portfolio {
+        padding: 50px 0;
+    }
+    #portfolio .fila {
+        display: block;
+    }
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+    /* seccion CONTACTO */
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+  }
