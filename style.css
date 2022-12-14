@@ -391,6 +391,9 @@ footer a {
     #servicios .fila {
         display: block;
     }
+    #portfolio .fila .proyecto {
+        max-width: 550px;
+    }
     #servicios .fila .servicio {
         margin: 10px auto;
     }
