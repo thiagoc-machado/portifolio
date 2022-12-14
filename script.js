@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
 //contat
 const btn = document.getElementById('button');
 
@@ -275,7 +278,7 @@ Array.prototype.last = function () {
     }
     });
 
-    action.addEventListener("mousedown", function (event) {
+    action.addEventListener("click", function (event) {
     if (phase == "waiting") {
         lastTimestamp = undefined;
         event.preventDefault();

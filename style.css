@@ -315,7 +315,7 @@ body {
     height: 120px;
     position: absolute;
     left: 20px;
-    color: white;
+    color:#000;
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
     border-radius: 50%;
@@ -335,7 +335,6 @@ body {
     font-weight: bold;
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
-
 }
 
 
@@ -386,6 +385,25 @@ footer a {
     #icono-nav {
         display: block;
     }
+    #servicios {
+        padding: 50px 15px;
+    }
+    #servicios .fila {
+        display: block;
+    }
+    #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+    #portfolio {
+        padding: 50px 0;
+    }
+    #portfolio .fila {
+        display: block;
+    }
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+}
     /* game */
     .container {
 
@@ -396,7 +414,7 @@ footer a {
         width: 100%;
         /* margin-top: -40px; */
     }
-}
+
 
 
 
