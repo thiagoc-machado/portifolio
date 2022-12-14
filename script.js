@@ -275,9 +275,10 @@ Array.prototype.last = function () {
     }
     });
 
-    window.addEventListener("mousedown", function (event) {
+    action.addEventListener("mousedown", function (event) {
     if (phase == "waiting") {
         lastTimestamp = undefined;
+        event.preventDefault();
         introductionElement.style.opacity = 0;
         phase = "stretching";
         window.requestAnimationFrame(animate);
@@ -286,25 +287,16 @@ Array.prototype.last = function () {
   //item.addEventListener("touchstart", pressingDown, false);
   //item.addEventListener("touchend", notPressingDown, false);
 
-    window.addEventListener("touchstart", function (event) {
+    action.addEventListener("touchstart", function (event) {
     if (phase == "waiting") {
-        requestAnimationFrame(timer);
-        e.preventDefault();
-        console.log("Pressing!");
         lastTimestamp = undefined;
+        event.preventDefault();
         introductionElement.style.opacity = 0;
         phase = "stretching";
         window.requestAnimationFrame(animate);
     }
     });
-    window.addEventListener("touchend", function (event) {
-    if (phase == "waiting") {
-        lastTimestamp = undefined;
-        introductionElement.style.opacity = 0;
-        phase = "stretching";
-        window.requestAnimationFrame(animate);
-    }
-    });
+
 
 
 

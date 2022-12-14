@@ -115,17 +115,22 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- GAME -->
     <div class="container">
-        <div id="score"></div>
         <canvas id="game" width="375" height="375"></canvas>
-        <div id="introduction">Hold down the mouse to stretch out a stick</div>
+        <div id="introduction">Click in the ACTION button to stretch out a stick</div>
         <div id="perfect">DOUBLE SCORE</div>
+        <!-- <div id="score"></div> -->
+        <ul class="hiscore" id="hiscore">Hi Score
+            <li id=score> SCORE. </li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
         <button id="restart">RESTART</button>
+        <button id="action" class="noselect">ACTION</button>
     </div>
-    <div id="action"  target="_blank">
-            <div id="item"></div>
-    </div>
-<script src="script.js"></script>
-
+    
 <!-- FOOTER -->
 <footer>
     <p>Todos los derechos reservados - 2022</p>
