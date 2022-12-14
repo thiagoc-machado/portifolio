@@ -29,3 +29,33 @@ btnCerrarPopup2.addEventListener('click', function(e){
 	overlay2.classList.remove('active');
 	popup2.classList.remove('active');
 });
+
+//Porject 3
+var btnAbrirPopup3 = document.getElementById('proj3-popup'),
+	overlay3 = document.getElementById('overlay3'),
+	popup3 = document.getElementById('popup3'),
+	btnCerrarPopup3 = document.getElementById('btn-cerrar-popup3');
+btnAbrirPopup3.addEventListener('click', function(){
+	overlay3.classList.add('active');
+	popup3.classList.add('active');
+});
+btnCerrarPopup3.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay3.classList.remove('active');
+	popup3.classList.remove('active');
+});
+
+//Porject 4
+var btnAbrirPopup4 = document.getElementById('proj4-popup'),
+	overlay4 = document.getElementById('overlay4'),
+	popup4 = document.getElementById('popup4'),
+	btnCerrarPopup4 = document.getElementById('btn-cerrar-popup4');
+btnAbrirPopup4.addEventListener('click', function(){
+	overlay4.classList.add('active');
+	popup4.classList.add('active');
+});
+btnCerrarPopup4.addEventListener('click', function(e){
+	e.preventDefault();
+	overlay4.classList.remove('active');
+	popup2.classList.remove('active');
+});
