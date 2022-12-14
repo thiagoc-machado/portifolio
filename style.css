@@ -13,6 +13,7 @@
 
 html,
 body {
+    touch-action:manipulation;
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -101,24 +102,24 @@ body {
     border: 2px solid var(--font-color);
 }
 #inicio .contenido .presentacion .bienvenida {
-    font-size: 16px;
+    font-size: 2vh;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px; 
 }
 #inicio .contenido .presentacion h2 {
-    font-size: 55px;
+    font-size: 6vh;
     margin-bottom: 25px;
     text-align: center;
 }
 #inicio .contenido .presentacion h2 span {
-    font-size: 25px;
+    font-size: 4vh;
     color: var(--pri-color);
 }
 #inicio .contenido .presentacion .descripcion {
     max-width: 700px;
     margin: 25px auto;
-    font-size: 18px;
+    font-size: 2vh;
     text-align: center;
 }
 #inicio .contenido .presentacion a {
@@ -200,7 +201,7 @@ body {
 
 #contacto {
     padding: 100px 15px;
-    background-color: rgba(188, 214, 146, 1);
+    background: linear-gradient(#BCD692,#b6ffff)
 }
 #contacto .titulo-seccion {
     margin-bottom: 20px;
@@ -257,7 +258,7 @@ body {
     align-items: center;
     height: 95%;
     width: 100%;
-    margin-top: -60px;
+    /* margin-top: -40px; */
 }
 
 #score {
@@ -299,22 +300,6 @@ body {
     opacity: 0;
     transition: opacity 2s;
 }
-#action{
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    color:#fff;
-    background: #3944e6;
-    border-radius: 50px;
-}
-#action:active{
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    color:#fff;
-    background: #e63942;
-    border-radius: 50px;
-}
 
 /* FOOTER */
 footer {
@@ -322,7 +307,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 footer a {
     text-decoration: none;
@@ -336,7 +321,8 @@ footer a {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+
     .redes {
         display: none;
     }
@@ -362,62 +348,33 @@ footer a {
     #icono-nav {
         display: block;
     }
-    #inicio .contenido .presentacion h2 {
-        font-size: 40px;
-    }
-    /* seccion SOBRE MI */
-    #sobremi {
-        padding: 50px 0;
-        display: block;
-    }
-    #sobremi .contenedor-foto {
-        max-width: 200px;
-        margin: auto;
-    }
-    #sobremi .contenedor-foto img {
-        padding: 8px;
-    }
-    #sobremi .sobremi .titulo-seccion {
-        text-align: center;
-    }
-    #sobremi .sobremi h2 {
-        font-size: 25px;
-        text-align: center;
-    }
-    /* seccion MIS SERVICIOS */
-    #servicios {
-        padding: 50px 15px;
-    }
-    #servicios .fila {
-        display: block;
-    }
-    #servicios .fila .servicio {
-        margin: 10px auto;
-    }
-    /* seccion HABLIDADES MI */
-    .contenedor-skills {
-        padding: 50px 20px;
-    }
-    /* seccion PORTFOLIO */
-    #portfolio {
-        padding: 50px 0;
-    }
-    #portfolio .fila {
-        display: block;
-    }
-    #portfolio .fila .proyecto {
-        margin: 10px auto;
-    }
-    /* seccion CONTACTO */
-    #contacto {
-        padding: 50px 15px;
-    }
-    #contacto .contenedor-form .mitad {
-        margin-bottom: 15px;
-        display: block;
-    }
-    #contacto .contenedor-form .mitad input {
+    /* game */
+    .container {
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         width: 100%;
-        margin-bottom: 15px;
+        /* margin-top: -40px; */
     }
+}
+
+
+
+
+#item {
+    margin-bottom: 50px;
+    position: absolute;
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: #EEE;
+    border: 5px dashed #111;
+    border-radius: 50%;
+  }
+
+  #item:hover {
+    background-color: #CCC;
+    cursor: pointer;
   }
