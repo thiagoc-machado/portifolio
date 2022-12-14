@@ -16,16 +16,16 @@ btnCerrarPopup.addEventListener('click', function(e){
 
 
 //Porject 2
-var btnAbrirPopup = document.getElementById('proj2-popup'),
+var btnAbrirPopup2 = document.getElementById('proj2-popup'),
 	overlay2 = document.getElementById('overlay2'),
 	popup2 = document.getElementById('popup2'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
-btnAbrirPopup.addEventListener('click', function(){
+	btnCerrarPopup2 = document.getElementById('btn-cerrar-popup2');
+btnAbrirPopup2.addEventListener('click', function(){
 	overlay2.classList.add('active');
 	popup2.classList.add('active');
 });
-btnCerrarPopup.addEventListener('click', function(e){
+btnCerrarPopup2.addEventListener('click', function(e){
 	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
+	overlay2.classList.remove('active');
+	popup2.classList.remove('active');
 });
