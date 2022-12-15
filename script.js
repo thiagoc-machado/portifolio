@@ -109,18 +109,36 @@ Array.prototype.last = function () {
   const perfectElement = document.getElementById("perfect");
   const restartButton = document.getElementById("restart");
   const scoreElement = document.getElementById("score");
-  const saveElement = document.getElementById("savename")
+
   var hallElement = {};
   
   // Hall of fame block
   
-  function placar(){
-    saveBtn.addEventListener("click", function (event) {
-      hallElement.append({Name: saveElement, Score: scoreElement})
-      console.log(scoreElement)
-      event.preventDefault();
-    });
+  const listElement = document.getElementById('hiscore');
+  const formElement = document.getElementById('savename');
+  let listItems = [];
+  function addItem(name, value) {
+    const newItem = document.createElement('li');
+    newItem.innerHTML = `${name}: ${value}`;
+    let insertIndex = 0;
+    while (insertIndex < listItems.length && listItems[insertIndex].value < value) {
+      insertIndex++;
+    }
+    listElement.insertBefore(newItem, listElement.childNodes[insertIndex]);
+    listItems.splice(insertIndex, 0, {name, value});
+    if (listItems.length > 9) {
+      listElement.removeChild(listElement.lastChild);
+      listItems.pop();
+    }
   }
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const name = formElement.elements['nameSave'].value;
+    //const value = formElement.elements['value'].value;
+    const value = score;
+    addItem(name, value);
+  }
+  savename.addEventListener('submit', handleFormSubmit);
 
   // var hallElement = {
   //   Name: "Thiago",

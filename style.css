@@ -359,6 +359,16 @@ body {
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
 }
+#saveBtn{
+    padding:5px;
+    width: 100px;
+    border-radius: 20px;
+}
+#nameSave{
+    border-radius: 20px;
+    padding: 5px;
+}
+
 
 /* FOOTER */
 footer {
