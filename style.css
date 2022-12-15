@@ -337,7 +337,7 @@ body {
 }
 #hiscore{
     text-decoration: none;
-    list-style: none;
+    list-style:decimal;
 }
 #hiscore_h{
     text-decoration: none;

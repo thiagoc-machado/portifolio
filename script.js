@@ -121,14 +121,15 @@ Array.prototype.last = function () {
     const newItem = document.createElement('li');
     newItem.innerHTML = `${name}: ${value}`;
     let insertIndex = 0;
-    while (insertIndex < listItems.length && listItems[insertIndex].value < value) {
+    while (insertIndex < listItems.length && listItems[insertIndex].value > value) {
       insertIndex++;
     }
     listElement.insertBefore(newItem, listElement.childNodes[insertIndex]);
     listItems.splice(insertIndex, 0, {name, value});
-    if (listItems.length > 9) {
+    if (listItems.length > 10) {
       listElement.removeChild(listElement.lastChild);
       listItems.pop();
+      console.log(listItems)
     }
   }
   function handleFormSubmit(event) {
@@ -137,6 +138,7 @@ Array.prototype.last = function () {
     //const value = formElement.elements['value'].value;
     const value = score;
     addItem(name, value);
+    savePlacarElement.style.display = "none";
   }
   savename.addEventListener('submit', handleFormSubmit);
 
