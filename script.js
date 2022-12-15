@@ -105,10 +105,29 @@ Array.prototype.last = function () {
   const ctx = canvas.getContext("2d");
   
   const introductionElement = document.getElementById("introduction");
+  const savePlacarElement = document.getElementById("saveplacar");
   const perfectElement = document.getElementById("perfect");
   const restartButton = document.getElementById("restart");
   const scoreElement = document.getElementById("score");
+  const saveElement = document.getElementById("savename")
+  var hallElement = {};
   
+  // Hall of fame block
+  
+  function placar(){
+    saveBtn.addEventListener("click", function (event) {
+      hallElement.append({Name: saveElement, Score: scoreElement})
+      console.log(scoreElement)
+      event.preventDefault();
+    });
+  }
+
+  // var hallElement = {
+  //   Name: "Thiago",
+  //   Score: scoreElement
+  //};
+
+
   // Initialize layout
   resetGame();
   
@@ -121,6 +140,7 @@ Array.prototype.last = function () {
     score = 0;
   
     introductionElement.style.opacity = 1;
+    savePlacarElement.style.display = "none";
     perfectElement.style.opacity = 0;
     restartButton.style.display = "none";
     scoreElement.innerText = score;
@@ -324,6 +344,7 @@ Array.prototype.last = function () {
           platformHeight + 100 + (window.innerHeight - canvasHeight) / 2;
         if (heroY > maxHeroY) {
           restartButton.style.display = "block";
+          savePlacarElement.style.display = "block";
           return;
         }
         break;

@@ -322,21 +322,43 @@ body {
     font-weight: 700;
     font-size: 1.2em;
 }
-#hiscore{
+#placar{
     display: flex;
-    width: 150px;
     flex-wrap: nowrap;
     flex-direction: column;
-    text-decoration: none;
-    list-style: none;
     position: absolute;
+    padding: 20px;
+    border-radius: 20px;
     right: 20px;
     color:#000;
     font-weight: bold;
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
 }
-
+#hiscore{
+    text-decoration: none;
+    list-style: none;
+}
+#hiscore_h{
+    text-decoration: none;
+    list-style: none;
+}
+#saveplacar{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    position: absolute;
+    font-weight: 800;
+    font-size: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: opacity 2s;
+    color:#fff;
+    border: 2px solid var(--font-color);
+    background-color: rgba(17, 75, 19, .5 );
+}
 
 /* FOOTER */
 footer {

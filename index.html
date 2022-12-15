@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="style.css">
     <title>Thiago Machado</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 </head>
 
 <!-- MAIN -->
@@ -145,14 +146,30 @@
         <div id="introduction">Click in the ACTION button to stretch out a stick</div>
         <div id="perfect">DOUBLE SCORE</div>
         <!-- <div id="score"></div> -->
-        <ul class="hiscore" id="hiscore">Hi Score
-            <li id=score> SCORE. </li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
+        <div class="placar" id="placar">
+            <ul class="hiscore_h" id="hiscore_h"> SCORE
+                <li id=score> SCORE. </li>
+            </ul>
+            <ul class="hiscore" id="hiscore">HALL OF FAME
+                <li id="l1">1</li>
+                <li id="l2">2</li>
+                <li id="l3">3</li>
+                <li id="l4">4</li>
+                <li id="l5">5</li>
+                <li id="l6">6</li>
+                <li id="l7">7</li>
+                <li id="l8">8</li>
+                <li id="l9">9</li>
+                <li id="l10">10</li>
+            </ul>
+    </div>
+        <div class="saveplacar" id="saveplacar">
+            <form action="" id="savename">
+                <a>Hi score! enter you name.<br></a>
+                <input type="text" placeholder="Name *" class="nameSave" id="nameSave">
+                <input type="submit" id="saveBtn" value="Save" class="saveBtn">
+            </form>
+        </div>
         <button id="restart">RESTART</button>
         <button id="action" class="noselect">ACTION</button>
     </div>
