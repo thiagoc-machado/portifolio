@@ -130,7 +130,7 @@ Array.prototype.last = function () {
     }
   }
 
-fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43")
+fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   .then(function(response) {
     return response.json();
   })
@@ -171,8 +171,9 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43")
     };
     req.open("PUT", "https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43", true);
     req.setRequestHeader("Content-Type", "application/json");
-    //req.setRequestHeader("X-Master-Key", "<YOUR_API_KEY>");
+    //req.setRequestHeader("$2b$10$CuyJSYeEbByWrT.GCrIOdeOwYmpIIBvPxEzhc4sdS5IQ1OMYXLn/q", "$2b$10$CuyJSYeEbByWrT.GCrIOdeOwYmpIIBvPxEzhc4sdS5IQ1OMYXLn/q");
     req.send(listaJSON);
+
   };
 
 
