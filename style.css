@@ -262,12 +262,11 @@ body {
 
 /* GAME */
 .container {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    height: 95%;
+    height: 100%;
     width: 100%;
-    /* margin-top: -40px; */
 }
 
 /* #score {
@@ -279,27 +278,27 @@ body {
 } */
 
 #introduction {
-    width: 200px;
+    width: 300px;
     height: 120px;
     position: absolute;
-    font-weight: 600;
-    font-size: 0.8em;
+    font-weight: 700;
+    font-size: 1.5em;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     transition: opacity 2s;
 }
 
 #restart {
-    width: 120px;
-    height: 120px;
-    left: 160px;
+    width: 200px;
+    height: 200px;
+    left: 20px;
+    font-weight: 700;
+    font-size: 1.5em;
     position: absolute;
     border-radius: 50%;
     color: white;
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
-    font-weight: 700;
-    font-size: 1.2em;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     display: none;
     cursor: pointer;
@@ -308,19 +307,21 @@ body {
 #perfect {
     position: absolute;
     opacity: 0;
+    font-weight: 700;
+    font-size: 1.5em;
     transition: opacity 2s;
 }
 #action {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     left: 20px;
     color:#000;
+    font-weight: 700;
+    font-size: 1.5em;
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
     border-radius: 50%;
-    font-weight: 700;
-    font-size: 1.2em;
 }
 #placar{
     display: flex;
@@ -334,6 +335,8 @@ body {
     font-weight: bold;
     border: 2px solid var(--font-color);
     background-color: rgba(17, 75, 19, .5 );
+    font-size: 1.5em;
+    margin-bottom: 350px;
 }
 #hiscore{
     text-decoration: none;
@@ -341,7 +344,8 @@ body {
 }
 #hiscore_h{
     text-decoration: none;
-    list-style: none;
+    list-style:none;
+    align-items: left;
 }
 #saveplacar{
     display: flex;
@@ -360,13 +364,25 @@ body {
     background-color: rgba(17, 75, 19, .5 );
 }
 #saveBtn{
-    padding:5px;
-    width: 100px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+    align-items: center;
 }
 #nameSave{
+    font-weight: 700;
+    font-size: 1.5em;
     border-radius: 20px;
     padding: 5px;
+}
+#titulo{
+    position: absolute;
+    margin-bottom: 900px;
+    font-size: 2em;
 }
 
 
@@ -438,17 +454,14 @@ footer a {
     #portfolio .fila .proyecto {
         margin: 10px auto;
     }
+    #titulo{
+        position: absolute;
+        margin-bottom: 1500px;
+        font-size: 2em;
+    }
 }
     /* game */
-    .container {
 
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        /* margin-top: -40px; */
-    }
 
 
 

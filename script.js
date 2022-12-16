@@ -109,6 +109,7 @@ Array.prototype.last = function () {
   const perfectElement = document.getElementById("perfect");
   const restartButton = document.getElementById("restart");
   const scoreElement = document.getElementById("score");
+  const actionButton = document.getElementById("action")
 
   var hallElement = {};
   
@@ -196,6 +197,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     savePlacarElement.style.display = "none";
     perfectElement.style.opacity = 0;
     restartButton.style.display = "none";
+    actionButton.style.display = "block";
     scoreElement.innerText = score;
   
     // The first platform is always the same
@@ -397,6 +399,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
           platformHeight + 100 + (window.innerHeight - canvasHeight) / 2;
         if (heroY > maxHeroY) {
           restartButton.style.display = "block";
+          actionButton.style.display = "none";
           savePlacarElement.style.display = "block";
           return;
         }
@@ -459,6 +462,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   restartButton.addEventListener("click", function (event) {
     event.preventDefault();
     resetGame();
+    actionButton.style.display = "block";
     restartButton.style.display = "none";
   });
   
