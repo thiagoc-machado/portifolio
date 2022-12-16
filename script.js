@@ -117,6 +117,27 @@ Array.prototype.last = function () {
   const listElement = document.getElementById('hiscore');
   const formElement = document.getElementById('savename');
   let listItems = [];
+  
+  function updateList(json) {
+    while (listElement.firstChild) {
+      listElement.removeChild(listElement.firstChild);
+    }
+    for (var i = 0; i < json.record.length; i++) {
+      var item = document.createElement('li');
+      namel = json.record[i].name;
+      valuel = json.record[i].value;
+      addItem(namel, valuel);
+    }
+  }
+
+fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    updateList(json);
+  });
+
   function addItem(name, value) {
     const newItem = document.createElement('li');
     newItem.innerHTML = `${name}: ${value}`;
@@ -129,24 +150,35 @@ Array.prototype.last = function () {
     if (listItems.length > 10) {
       listElement.removeChild(listElement.lastChild);
       listItems.pop();
-      console.log(listItems)
     }
   }
+
   function handleFormSubmit(event) {
     event.preventDefault();
     const name = formElement.elements['nameSave'].value;
-    //const value = formElement.elements['value'].value;
     const value = score;
     addItem(name, value);
     savePlacarElement.style.display = "none";
-  }
+
+    var listaJSON = JSON.stringify(listItems);
+    console.log(listaJSON)
+    let req = new XMLHttpRequest();
+
+    req.onreadystatechange = () => {
+      if (req.readyState == XMLHttpRequest.DONE) {
+        console.log(req.responseText);
+      }
+    };
+    req.open("PUT", "https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43", true);
+    req.setRequestHeader("Content-Type", "application/json");
+    //req.setRequestHeader("X-Master-Key", "<YOUR_API_KEY>");
+    req.send(listaJSON);
+  };
+
+
+  
+
   savename.addEventListener('submit', handleFormSubmit);
-
-  // var hallElement = {
-  //   Name: "Thiago",
-  //   Score: scoreElement
-  //};
-
 
   // Initialize layout
   resetGame();
