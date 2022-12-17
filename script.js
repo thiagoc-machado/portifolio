@@ -10,7 +10,6 @@ const btn = document.getElementById('button');
       const serviceID = 'service_5ojkbxf';
       const templateID = 'template_xbuhk1b';
       emailjs.sendForm(serviceID, templateID, this)
-      console.log(emailjs)
       .then(() => {
         btn.value = 'Message sent';
         alert('Message sent successfully');
@@ -19,8 +18,6 @@ const btn = document.getElementById('button');
         alert(JSON.stringify(err));
     });
   });
-
-
 
 function seleccionar(link) {
   var opciones = document.querySelectorAll('#links  a');

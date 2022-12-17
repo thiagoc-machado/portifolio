@@ -10,9 +10,8 @@ const btn = document.getElementById('button');
       const serviceID = 'service_5ojkbxf';
       const templateID = 'template_xbuhk1b';
       emailjs.sendForm(serviceID, templateID, this)
-      console.log(emailjs)
       .then(() => {
-        btn.value = 'Mensage enviada';
+        btn.value = 'Mensaje enviada';
         alert('Mensaje enviado correctamente');
       }, (err) => {
         btn.value = 'Enviar mensaje';

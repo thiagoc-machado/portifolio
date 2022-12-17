@@ -57,5 +57,5 @@ btnAbrirPopup4.addEventListener('click', function(){
 btnCerrarPopup4.addEventListener('click', function(e){
 	e.preventDefault();
 	overlay4.classList.remove('active');
-	popup2.classList.remove('active');
+	popup4.classList.remove('active');
 });

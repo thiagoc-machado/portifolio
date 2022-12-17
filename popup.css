@@ -284,6 +284,98 @@ body {
 	background: rgba(94,125,227, .9);
 }
 
+/* POPUP 4 */
+
+.overlay4 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay4.active {
+	visibility: visible;
+}
+
+.popup4 {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup4 .btn-cerrar-popup4 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup4 .btn-cerrar-popup4:hover {
+	color: #000;
+}
+
+.popup4 h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup4 h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.popup4 form .proj4-inputs {
+	opacity: 0;
+}
+
+.popup4 form .proj4-inputs input {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	font-size: 18px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup4 form .btn-submit4 {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.popup4 form .btn-submit4:hover {
+	background: rgba(94,125,227, .9);
+}
+
+
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
@@ -298,6 +390,10 @@ body {
 .popup3.active {	transform: scale(1); opacity: 1; }
 .popup3.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup3.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+
+.popup4.active {	transform: scale(1); opacity: 1; }
+.popup4.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup4.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
 
 
 
