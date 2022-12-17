@@ -6,16 +6,16 @@ const btn = document.getElementById('button');
     
   .addEventListener('submit', function(event) {
       event.preventDefault();
-      btn.value = 'Sending...';
+      btn.value = 'Enviando...';
       const serviceID = 'service_5ojkbxf';
       const templateID = 'template_xbuhk1b';
       emailjs.sendForm(serviceID, templateID, this)
       console.log(emailjs)
       .then(() => {
-        btn.value = 'Message sent';
-        alert('Message sent successfully');
+        btn.value = 'Mensage enviada';
+        alert('Mensaje enviado correctamente');
       }, (err) => {
-        btn.value = 'Send message';
+        btn.value = 'Enviar mensaje';
         alert(JSON.stringify(err));
     });
   });
@@ -270,13 +270,13 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     resetGame();
 
   // If space was pressed restart the game
-    // window.addEventListener("keydown", function (event) {
-    // if (event.key == " ") {
-    //     event.preventDefault();
-    //     resetGame();
-    //     return;
-    // }
-    // });
+    window.addEventListener("keydown", function (event) {
+    if (event.key == " ") {
+        event.preventDefault();
+        resetGame();
+        return;
+    }
+    });
 
     action.addEventListener("click", function (event) {
     if (phase == "waiting") {
@@ -400,9 +400,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
         if (heroY > maxHeroY) {
           restartButton.style.display = "block";
           actionButton.style.display = "none";
-          if (score > listItems[9].value){
-            savePlacarElement.style.display = "block";
-          }
+          savePlacarElement.style.display = "block";
           return;
         }
         break;

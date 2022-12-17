@@ -49,17 +49,21 @@ body {
 #inicio .contenido header .contenido-header {
     max-width: 1100px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
 }
-#inicio .contenido header .contenido-header h1 a{
-    text-decoration: none;
-    color: #fff;
-    font-size: .6em;
-    margin-left: 50px;
+#flags{
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+#flags .flag{
+    width: 80%;
+    height: 100%;
+    margin-right: 5px;
+    cursor: pointer;
 }
 #inicio .contenido header .contenido-header nav ul {
     list-style: none;
@@ -459,5 +463,9 @@ footer a {
         margin-bottom: 900px;
         font-size: 2em;
     }
+
+
+
+
 }
 
