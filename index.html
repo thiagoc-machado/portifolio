@@ -77,9 +77,9 @@
         </div>
     </div>
     <div class="fila">
-        <div class="proyecto"id=proj1>
+        <div class="proyecto"id=proj>
             <div class="overlay"></div>
-            <a><img src="img/proyecto3.jpg"  alt="" id="proj3-popup" class="proj1-popup" ></a>
+            <a><img src="img/proyecto3.jpg"  alt="" id="proj3-popup" class="proj3-popup" ></a>
             <div class="info">
                 <h4>Coming Soon</h4>
                 <p>Soon there will be another project here</p>
@@ -87,7 +87,7 @@
         </div>
         <div class="proyecto">
             <div class="overlay"></div>
-            <a><img src="img/proyecto4.jpg"  alt="" id="proj4-popup" class="proj1-popup" ></a>
+            <a><img src="img/proyecto4.jpg"  alt="" id="proj4-popup" class="proj4-popup" ></a>
             <div class="info">
                 <h4>Coming Soon</h4>
                 <p>Soon there will be another project here</p>
@@ -117,6 +117,16 @@
             </form>
         </div>
     </div>
+    <div class="overlay3" id="overlay3">
+        <div class="popup3" id="popup3">
+            <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="fas fa-times"></i></a>
+            <h3>this portfolio</h3>
+            <h4>Made with CSS and javascript animations, responsive, contact field with sending emails, special emphasis on the game that was made in pure Javascript, use of api to save and read the "hall of fame" ranking, adapted to work with mouse and touchscreens.</h4>
+            <form action="https://triac.info/" target="_blank">
+                <!-- <input type="submit" class="btn-submit3" value="Access the website."> -->
+            </form>
+        </div>
+    </div>
 </section>
 
 
@@ -124,16 +134,16 @@
 <section id="contacto">
     <h3 class="titulo-seccion">Send me a message</h3>
     <div class="contenedor-form">
-        <form id="form" action="">
+        <form id="form">
             <div class="fila mitad">
-                <input type="text" placeholder="Name *" class="input-mitad">
-                <input type="email" placeholder="email@email.com" class="input-mitad">
+                <input type="text" id="name" placeholder="Name *" class="input-mitad" name="name">
+                <input type="email" id="email" placeholder="email@email.com" class="input-mitad"name ="email">
             </div>
             <div class="fila">
-                <input type="text" placeholder="Subject" class="input-full">
+                <input type="text" id="subject"placeholder="Subject" class="input-full" name="subject">
             </div>
             <div class="fila">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message..." class="input-full"></textarea>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message..." class="input-full" name="message"></textarea>
             </div>
             <input type="submit" id="button" value="Send Message" class="btn-enviar">
         </form>
@@ -158,7 +168,7 @@
     </div>
         <div class="saveplacar" id="saveplacar">
             <form action="" id="savename">
-                <a id="enterName">Hi score! enter you name.<br></a>
+                <a id="enterName">Enter your name for the<br>Hall of fame<br></a>
                 <input type="text" placeholder="Name *" class="nameSave" id="nameSave">
                 <button type="submit" id="saveBtn" value="Save" class="saveBtn"> Save </button>
             </form>
@@ -178,6 +188,10 @@
 </footer>
 <script src="script.js"></script>
 <script src="popup.js"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    emailjs.init('3PaqMmy4pZ6WPjmFa')
+    //emailjs.send("service_5ojkbxf","template_xbuhk1b");
+</script>
 </body>
 </html>

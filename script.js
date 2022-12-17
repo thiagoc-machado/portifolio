@@ -1,23 +1,26 @@
 
-//contat
+//contato
 const btn = document.getElementById('button');
 
-document.getElementById('form')
+  document.getElementById('form')
     
-    .addEventListener('submit', function(event) {
-        event.preventDefault();
-        btn.value = 'Sending...';
-        const serviceID = 'default_service';
-        const templateID = 'template_cs6uocn';
-        emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-        btn.value = 'Sen message';
+  .addEventListener('submit', function(event) {
+      event.preventDefault();
+      btn.value = 'Sending...';
+      const serviceID = 'service_5ojkbxf';
+      const templateID = 'template_xbuhk1b';
+      emailjs.sendForm(serviceID, templateID, this)
+      console.log(emailjs)
+      .then(() => {
+        btn.value = 'Message sent';
         alert('Message sent successfully');
-    }, (err) => {
+      }, (err) => {
         btn.value = 'Send message';
         alert(JSON.stringify(err));
     });
-});
+  });
+
+
 
 function seleccionar(link) {
   var opciones = document.querySelectorAll('#links  a');
@@ -170,7 +173,6 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     };
     req.open("PUT", "https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43", true);
     req.setRequestHeader("Content-Type", "application/json");
-    //req.setRequestHeader("$2b$10$CuyJSYeEbByWrT.GCrIOdeOwYmpIIBvPxEzhc4sdS5IQ1OMYXLn/q", "$2b$10$CuyJSYeEbByWrT.GCrIOdeOwYmpIIBvPxEzhc4sdS5IQ1OMYXLn/q");
     req.send(listaJSON);
 
   };
@@ -254,7 +256,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     // X coordinate of the right edge of the furthest platform
     const lastPlatform = platforms[platforms.length - 1];
     let furthestX = lastPlatform.x + lastPlatform.w;
-  
+   
     const x =
       furthestX +
       minimumGap +
