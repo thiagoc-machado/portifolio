@@ -269,13 +269,13 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     resetGame();
 
   // If space was pressed restart the game
-    window.addEventListener("keydown", function (event) {
-    if (event.key == " ") {
-        event.preventDefault();
-        resetGame();
-        return;
-    }
-    });
+    // window.addEventListener("keydown", function (event) {
+    // if (event.key == " ") {
+    //     event.preventDefault();
+    //     resetGame();
+    //     return;
+    // }
+    // });
 
     action.addEventListener("click", function (event) {
     if (phase == "waiting") {
@@ -399,7 +399,9 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
         if (heroY > maxHeroY) {
           restartButton.style.display = "block";
           actionButton.style.display = "none";
-          savePlacarElement.style.display = "block";
+          if (score > listItems[9].value){
+            savePlacarElement.style.display = "block";
+          }
           return;
         }
         break;
