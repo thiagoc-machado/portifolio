@@ -48,7 +48,7 @@ body {
 }
 #inicio .contenido header .contenido-header {
     max-width: 1100px;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,10 +60,11 @@ body {
     height: 10%;
 }
 #flags .flag{
-    width: 80%;
+    width: 60%;
     height: 100%;
-    margin-right: 5px;
+    margin-right: 1px;
     cursor: pointer;
+    margin-left: 50px;
 }
 #inicio .contenido header .contenido-header nav ul {
     list-style: none;
@@ -435,7 +436,7 @@ footer a {
     #icono-nav {
         display: block;
         margin-right: 50px;
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
     #servicios {
         padding: 50px 15px;
