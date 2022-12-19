@@ -70,6 +70,56 @@ body {
     list-style: none;
     filter:invert(20);
 }
+
+  
+ul.flags li img[title]:hover::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 8px);
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  }
+  
+  ul.flags li img[title]:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 8px);
+    border: 8px solid transparent;
+    border-top: 8px solid #333;
+  }
+  
+  ul.flags li img[title]:hover::before,
+  ul.flags li img[title]:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.3s linear;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 #inicio .contenido header .contenido-header nav ul {
     list-style: none;
     display: flex;
@@ -96,15 +146,14 @@ body {
 }
 #inicio .contenido header .contenido-header .redes li {
     text-decoration: none;
-    background: #0aff01;
-    color: var(--font-color);
+    color: #fff;
     display: inline-block;
     margin-left: 10px;
     transition: .5s;
     font-size: 1.9em;
 }
 #inicio .contenido header .contenido-header .redes li:hover {
-    color: var(--pri-color);
+    color: #5a0a0a
 }
 #inicio .contenido .presentacion {
     max-width: 1100px;
