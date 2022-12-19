@@ -72,7 +72,7 @@ Array.prototype.last = function () {
   // Configuration
   const canvasWidth = 375;
   const canvasHeight = 675;
-  const platformHeight = 100;
+  const platformHeight = 200;
   const heroDistanceFromEdge = 10; // While waiting
   const paddingX = 100; // The waiting position of the hero in from the original canvas size
   const perfectAreaSize = 10;
