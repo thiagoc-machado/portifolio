@@ -68,7 +68,11 @@ body {
     font-size: 1.5em;
     display: inline-flex;
     list-style: none;
-    filter:invert(20);
+    filter: invert();
+}
+#flags .flag:hover {
+    filter:hue-rotate(220deg);
+    transition: .5s;
 }
 
   
@@ -144,16 +148,21 @@ ul.flags li img[title]:hover::before {
 #inicio .contenido header .contenido-header .redes{
     margin-right: 50px;
 }
-#inicio .contenido header .contenido-header .redes li {
+#inicio .contenido header .contenido-header .redes li{
     text-decoration: none;
-    color: #fff;
     display: inline-block;
     margin-left: 10px;
+}
+#inicio .contenido header .contenido-header .redes li a{
+
+    border-radius: 20px;
+    color: #fff;
     transition: .5s;
     font-size: 1.9em;
 }
-#inicio .contenido header .contenido-header .redes li:hover {
-    color: #5a0a0a
+
+#inicio .contenido header .contenido-header .redes li a:hover {
+    color: var(--pri-color)
 }
 #inicio .contenido .presentacion {
     max-width: 1100px;
