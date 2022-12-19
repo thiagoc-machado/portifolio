@@ -1,3 +1,4 @@
+const backdrop = document.getElementById("portfolio");
 
 //Porject 1
 var btnAbrirPopup = document.getElementById('proj1-popup'),
@@ -13,6 +14,7 @@ btnCerrarPopup.addEventListener('click', function(e){
 	overlay.classList.remove('active');
 	popup.classList.remove('active');
 });
+  
 
 
 //Porject 2

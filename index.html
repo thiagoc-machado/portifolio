@@ -23,9 +23,9 @@
         <header>
             <div class="contenido-header">
                 <ul class="flags" id="flags">
-                    <li href="/index.html"><img src="/img/us.png" class = flag width="30px"></li>
-                    <li href="/index_es.html"><img src="/img/es.png" class = flag width="30px"></li>
-                    <li href="/index_br.html"><img src="/img/br.png" class = flag width="30px"></li>
+                    <li><a href="/index.html"><img src="/img/us.png" class=flag id="flag1" width="30px"></li>
+                    <li><a href="/index_es.html"><img src="/img/es.png" class=flag id="flag2" width="30px"></li>
+                    <li><a href="/index_br.html"><img src="/img/br.png" class=flag id="flag3" width="30px"></li>
                     <!-- <h1><a id="logo" href="#inicio">/TM/</a></h1> -->
                 </ul>
                 <nav id="nav" class="">
@@ -102,50 +102,52 @@
             </div>
         </div>
     </div>
-
-    <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            <h3>CAP 2022</h3>
-            <h4>This web application I present is a study tool designed especially for those who need to pass the CAP exam in Spain. It performs web scraping of the questions from the website of the Spanish Ministry of Transport, selects the links to the topics of the questions, accesses each one of them and downloads all the questions, creating a file with the raw data.<br>
-                The data is organized and presented to the user randomly, allowing you to test your knowledge in a challenging and efficient way. In addition, the application has a system for counting correct answers, errors and unanswered questions, which is carried out using javascript and saved in cookies in the user's browser so you don't lose your progress.<br>
-                I am still working on the development of this tool and we plan to implement new features, such as organizing the questions by topic and creating a login system to control users. I believe that these improvements will be fundamental in making the application even more useful and efficient for those who need to prepare for the CAP exam..</h4>
-            <form action="https://cap-empc.onrender.com/" target="_blank">
-                <input type="submit" class="btn-submit" value="Access the website.">
-            </form>
+    <!-- POPUP -->
+    <div class="popup_sec" id="popup_sec">
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                <h3>CAP 2022</h3>
+                <h4>This web application I present is a study tool designed especially for those who need to pass the CAP exam in Spain. It performs web scraping of the questions from the website of the Spanish Ministry of Transport, selects the links to the topics of the questions, accesses each one of them and downloads all the questions, creating a file with the raw data.<br>
+                    The data is organized and presented to the user randomly, allowing you to test your knowledge in a challenging and efficient way. In addition, the application has a system for counting correct answers, errors and unanswered questions, which is carried out using javascript and saved in cookies in the user's browser so you don't lose your progress.<br>
+                    I am still working on the development of this tool and we plan to implement new features, such as organizing the questions by topic and creating a login system to control users. I believe that these improvements will be fundamental in making the application even more useful and efficient for those who need to prepare for the CAP exam..</h4>
+                <form action="https://cap-empc.onrender.com/" target="_blank">
+                    <input type="submit" class="btn-submit" value="Access the website.">
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="overlay2" id="overlay2">
-        <div class="popup2" id="popup2">
-            <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fas fa-times"></i></a>
-            <h3>Triac Soluções em eletrônica</h3>
-            <h4>The home appliance maintenance company's website was developed with a combination of HTML, CSS, and JavaScript to ensure an optimized and attractive user experience.<br>
-                The website's structure was carefully designed to be intuitive and easy to navigate, with a responsive menu that perfectly adapts to any screen size. In addition, we included a field for sending messages so that you can contact us quickly and easily, as well as photos with descriptions and animations to make your experience more pleasant and interactive.<br>
-                We use the most updated technologies to ensure that the website has an optimized and fast performance, and we are always looking for ways to further improve the user's navigation experience.</h4>
-            <form action="https://triac.info/" target="_blank">
-                <input type="submit" class="btn-submit2" value="Access the website.">
-            </form>
+        <div class="overlay2" id="overlay2">
+            <div class="popup2" id="popup2">
+                <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                <h3>Triac Soluções em eletrônica</h3>
+                <h4>The home appliance maintenance company's website was developed with a combination of HTML, CSS, and JavaScript to ensure an optimized and attractive user experience.<br>
+                    The website's structure was carefully designed to be intuitive and easy to navigate, with a responsive menu that perfectly adapts to any screen size. In addition, we included a field for sending messages so that you can contact us quickly and easily, as well as photos with descriptions and animations to make your experience more pleasant and interactive.<br>
+                    We use the most updated technologies to ensure that the website has an optimized and fast performance, and we are always looking for ways to further improve the user's navigation experience.</h4>
+                <form action="https://triac.info/" target="_blank">
+                    <input type="submit" class="btn-submit2" value="Access the website.">
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="overlay3" id="overlay3">
-        <div class="popup3" id="popup3">
-            <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="fas fa-times"></i></a>
-            <h3>This portfolio</h3>
-            <h4>This portfolio was developed with CSS and JavaScript animations, has a responsive interface and a contact field with email sending capability. In addition, it features a game developed entirely with pure JavaScript, which uses an API to save and display the "hall of fame" ranking. It has also been adapted to work with mouse and touch screens.<br>
-                Come test your skills and put your name in the "Hall of Fame"!</h4>
-            <form action="#" target="_blank">
-                <!-- <input type="submit" class="btn-submit3" value="Access the website."> -->
-            </form>
+        <div class="overlay3" id="overlay3">
+            <div class="popup3" id="popup3">
+                <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                <h3>This portfolio</h3>
+                <h4>This portfolio was developed with CSS and JavaScript animations, has a responsive interface and a contact field with email sending capability. In addition, it features a game developed entirely with pure JavaScript, which uses an API to save and display the "hall of fame" ranking. It has also been adapted to work with mouse and touch screens.<br>
+                    Come test your skills and put your name in the "Hall of Fame"!</h4>
+                <form action="#" target="_blank">
+                    <!-- <input type="submit" class="btn-submit3" value="Access the website."> -->
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="overlay4" id="overlay4">
-        <div class="popup4" id="popup4">
-            <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i class="fas fa-times"></i></a>
-            <h3>Comming soom</h3>
-            <h4>Soon there will be another project here</h4>
-            <form action="#" target="_blank">
-                <!-- <input type="submit" class="btn-submit3" value="Access the website."> -->
-            </form>
+        <div class="overlay4" id="overlay4">
+            <div class="popup4" id="popup4">
+                <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                <h3>Comming soom</h3>
+                <h4>Soon there will be another project here</h4>
+                <form action="#" target="_blank">
+                    <!-- <input type="submit" class="btn-submit4" value="Access the website."> -->
+                </form>
+            </div>
         </div>
     </div>
 </section>

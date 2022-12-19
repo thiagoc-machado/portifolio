@@ -1,6 +1,6 @@
 :root{
-    --pri-color:#151953;
-    --sec-color:#384996;
+    --pri-color:#0aff01;
+    --sec-color:#1d254d;
     --ter-color:#010124;
     --font-color:rgb(255, 255, 255);
 }
@@ -62,23 +62,14 @@ body {
 }
 #flags .flag{
     text-decoration: none;
-    filter:invert();
     display: inline-block;
     margin-left: 10px;
-    transition: 1s;
+    transition: .5s;
     font-size: 1.5em;
     display: inline-flex;
     list-style: none;
+    filter:invert(20);
 }
-
-
-
-
-
-
-
-
-
 #inicio .contenido header .contenido-header nav ul {
     list-style: none;
     display: flex;
@@ -87,6 +78,10 @@ body {
 #inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
     color: var(--font-color);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    word-spacing: 5px;
+    padding: 5px;
     margin: 0 12px;
     font-weight: 400;
     transition: 1s;
@@ -94,19 +89,21 @@ body {
 }
 #inicio .contenido header .contenido-header nav ul a:hover{
     color: var(--pri-color);
+    background: rgba(0, 0, 0, 0.6);
 }
 #inicio .contenido header .contenido-header .redes{
     margin-right: 50px;
 }
-#inicio .contenido header .contenido-header .redes a {
+#inicio .contenido header .contenido-header .redes li {
     text-decoration: none;
+    background: #0aff01;
     color: var(--font-color);
     display: inline-block;
     margin-left: 10px;
-    transition: 1s;
-    font-size: 1.5em;
+    transition: .5s;
+    font-size: 1.9em;
 }
-#inicio .contenido header .contenido-header .redes a:hover {
+#inicio .contenido header .contenido-header .redes li:hover {
     color: var(--pri-color);
 }
 #inicio .contenido .presentacion {
@@ -144,7 +141,7 @@ body {
 }
 #inicio .contenido .presentacion h2 span {
     font-size: 4vh;
-    color: var(--pri-color);
+    color: var(--sec-color);
 }
 #inicio .contenido .presentacion .descripcion {
     max-width: 700px;
