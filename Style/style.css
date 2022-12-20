@@ -73,16 +73,19 @@ body {
     filter:grayscale();
     border-radius: 20px;
     margin-right: 10px;
+    transition: .5s;
 }
 #flag2{
     filter:grayscale();
     border-radius: 20px;
     margin-right: 10px;
+    transition: .5s;
 }
 #flag3{
     filter:grayscale();
     border-radius: 20px;
     margin-right: 10px;
+    transition: .5s;
 }
 #flag1:hover {
     filter:none;
@@ -539,6 +542,23 @@ footer a {
     }
     #flags{
         font-size: 3em;
+        transition: .5s;
+    }
+    #flag1:hover {
+        filter:none;
+        transition: 2s;
+    }
+    #flag2:hover {
+        filter:none;
+        transition: 2s;
+    }
+    #flag3:hover {
+        filter:none;
+        transition: 2s;
+    }
+    #flag4:hover {
+        filter:none;
+        transition: 2s;
     }
     #inicio .contenido .presentacion .box {
         margin-top: 350px;
