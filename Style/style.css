@@ -28,13 +28,34 @@ body {
     scroll-behavior: smooth;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
-    background-color: rgba(188, 214, 146, 1);
+    background-color: #5903fa;
     cursor:auto;
 }
 
   /* MAIN */
+
+  #bg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  #bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
 #inicio {
-    background: linear-gradient(rgba(105, 183, 247, 0.7),rgba(188, 214, 146, 1)),url("img/back.jpg");
+    background: linear-gradient(rgb(0, 0, 0,0.5),rgba(89, 3, 250, 1));
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -257,7 +278,7 @@ ul.flags li img[title]:hover::before {
     max-width: 1100px;
     padding: 100px 0;
     margin: auto;
-    background-color: rgba(188, 214, 146, 1);
+
 }
 #portfolio .titulo-seccion {
     text-align: center;
@@ -312,7 +333,7 @@ ul.flags li img[title]:hover::before {
 
 #contacto {
     padding: 100px 15px;
-    background: linear-gradient(#BCD692,#b6ffff)
+    background: linear-gradient(#5903fa,#00498d)
 }
 #contacto .titulo-seccion {
     margin-bottom: 20px;

@@ -575,8 +575,8 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   function drawBackground() {
     // Draw sky
     var gradient = ctx.createLinearGradient(0, 0, 0, window.innerHeight);
-    gradient.addColorStop(0, "#b6ffff");
-    gradient.addColorStop(1, "#f78145");
+    gradient.addColorStop(0, "#00498d");
+    gradient.addColorStop(1, "#8d0000");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
   
