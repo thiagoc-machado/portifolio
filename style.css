@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0;
+    margin-top: 2px;
 }
 #flags{
     display: flex;
@@ -60,18 +60,40 @@ body {
     display: inline-flex;
     list-style: none;
 }
-#flags .flag{
+#flags{
     text-decoration: none;
     display: inline-block;
     margin-left: 10px;
     transition: .5s;
-    font-size: 1.5em;
     display: inline-flex;
     list-style: none;
-    filter: invert();
+    font-size: 2em;
 }
-#flags .flag:hover {
-    filter:hue-rotate(220deg);
+#flag1{
+    filter:grayscale();
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#flag2{
+    filter:grayscale();
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#flag3{
+    filter:grayscale();
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#flag1:hover {
+    filter:none;
+    transition: .5s;
+}
+#flag2:hover {
+    filter:none;
+    transition: .5s;
+}
+#flag3:hover {
+    filter:none;
     transition: .5s;
 }
 
@@ -481,6 +503,9 @@ footer a {
 
 @media only screen and (max-width: 1000px) and (orientation : portrait){
 
+    #inicio .contenido header .contenido-header {
+        margin-top: 20px;
+    }
     .redes {
         display: none;
     }
@@ -499,6 +524,7 @@ footer a {
     nav.responsive ul {
         display: block !important;
         text-align: center;
+        font-size: 3vw;
     }
     nav.responsive ul li {
         margin: 5px 0;
@@ -506,7 +532,13 @@ footer a {
     #icono-nav {
         display: block;
         margin-right: 50px;
-        font-size: 1.5em;
+        font-size: 3em;
+    }
+    #flags .flag{
+        width: 50px;
+    }
+    #flags{
+        font-size: 3em;
     }
     #inicio .contenido .presentacion .box {
         margin-top: 350px;
