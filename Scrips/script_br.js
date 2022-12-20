@@ -73,8 +73,8 @@ Array.prototype.last = function () {
   
   // Configuration
   const canvasWidth = 375;
-  const canvasHeight = 675;
-  const platformHeight = 100;
+  const canvasHeight = 1100;
+  const platformHeight = 200;
   const heroDistanceFromEdge = 10; // While waiting
   const paddingX = 100; // The waiting position of the hero in from the original canvas size
   const perfectAreaSize = 10;
@@ -110,6 +110,8 @@ Array.prototype.last = function () {
   const restartButton = document.getElementById("restart");
   const scoreElement = document.getElementById("score");
   const actionButton = document.getElementById("action")
+  const gameoverElement = document.getElementById("gameover")
+  const gameoverScoreElement = document.getElementById("gameoverScore")
 
   var hallElement = {};
   
@@ -194,6 +196,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   
     introductionElement.style.opacity = 1;
     savePlacarElement.style.display = "none";
+    gameoverElement.style.display = "none"
     perfectElement.style.opacity = 0;
     restartButton.style.display = "none";
     actionButton.style.display = "block";
@@ -338,7 +341,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
             // Increase score
             score += perfectHit ? 2 : 1;
             scoreElement.innerText = score;
-  
+            gameoverScoreElement.innerText = "Score: " + score;
             if (perfectHit) {
               perfectElement.style.opacity = 1;
               setTimeout(() => (perfectElement.style.opacity = 0), 1000);
@@ -399,6 +402,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
         if (heroY > maxHeroY) {
           restartButton.style.display = "block";
           actionButton.style.display = "none";
+          gameoverElement.style.display = "block";
           if (score > listItems[9].value){
             savePlacarElement.style.display = "block";
           }
@@ -465,6 +469,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     resetGame();
     actionButton.style.display = "block";
     restartButton.style.display = "none";
+    gameoverElement.style.display = "none";
   });
   
   function drawPlatforms() {

@@ -65,13 +65,12 @@ Array.prototype.last = function () {
   let sticks = [];
   let trees = [];
   
-  // Todo: Save high score to localStorage (?)
   
   let score = 0;
   
   // Configuration
   const canvasWidth = 375;
-  const canvasHeight = 675;
+  const canvasHeight = 1100;
   const platformHeight = 200;
   const heroDistanceFromEdge = 10; // While waiting
   const paddingX = 100; // The waiting position of the hero in from the original canvas size
@@ -108,6 +107,8 @@ Array.prototype.last = function () {
   const restartButton = document.getElementById("restart");
   const scoreElement = document.getElementById("score");
   const actionButton = document.getElementById("action")
+  const gameoverElement = document.getElementById("gameover")
+  const gameoverScoreElement = document.getElementById("gameoverScore")
 
   var hallElement = {};
   
@@ -194,6 +195,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     savePlacarElement.style.display = "none";
     perfectElement.style.opacity = 0;
     restartButton.style.display = "none";
+    gameoverElement.style.display = "none"
     actionButton.style.display = "block";
     scoreElement.innerText = score;
   
@@ -336,6 +338,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
             // Increase score
             score += perfectHit ? 2 : 1;
             scoreElement.innerText = score;
+            gameoverScoreElement.innerText = "Score: " + score;
   
             if (perfectHit) {
               perfectElement.style.opacity = 1;
@@ -396,6 +399,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
           platformHeight + 100 + (window.innerHeight - canvasHeight) / 2;
         if (heroY > maxHeroY) {
           restartButton.style.display = "block";
+          gameoverElement.style.display = "block";
           actionButton.style.display = "none";
           if (score > listItems[9].value){
             savePlacarElement.style.display = "block";
@@ -461,6 +465,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   restartButton.addEventListener("click", function (event) {
     event.preventDefault();
     resetGame();
+    gameoverElement.style.display = "none";
     actionButton.style.display = "block";
     restartButton.style.display = "none";
   });
@@ -571,7 +576,6 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
       ctx.restore();
     });
   }
-  
   function drawBackground() {
     // Draw sky
     var gradient = ctx.createLinearGradient(0, 0, 0, window.innerHeight);

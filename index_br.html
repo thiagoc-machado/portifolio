@@ -185,12 +185,30 @@
                 <button type="submit" id="saveBtn" value="Save" class="saveBtn"> Salvar </button>
             </form>
         </div>
-        <button id="restart">REINICIAR</button>
-        <button id="action" class="noselect">AÇÃO</button>
+        <ul id="gameover">Game Over  
+            <li id="gameoverScore"></li>
+        </ul>
+        <button id="restart">RESTART</button>
+        <button id="action" class="noselect">ACTION</button>
     </div>
     
 <!-- FOOTER -->
 <footer>
+
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(102,178,255)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(51,153,255)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,128,255)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,102,204)" />
+        </g>
+        </svg>
+    </div>
     <p>Thiago Machado - Todos os direitos reservados - 2022</p>
     <div class="redes">
         <a href="https://www.linkedin.com/in/thiago-carvalho-machado/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
