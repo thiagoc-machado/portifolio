@@ -240,8 +240,8 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
       minimumGap +
       Math.floor(Math.random() * (maximumGap - minimumGap));
   
-    const treeColors = ["#6D8821", "#8FAC34", "#98B333"];
-    const color = treeColors[Math.floor(Math.random() * 3)];
+      const treeColors = ["#f7f30d", "#8FAC34", "#133313"];
+      const color = treeColors[Math.floor(Math.random() * 3)];
   
     trees.push({ x, color });
   }
@@ -470,7 +470,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   function drawPlatforms() {
     platforms.forEach(({ x, w }) => {
       // Draw platform
-      ctx.fillStyle = "black";
+      ctx.fillStyle = "#1f1308";
       ctx.fillRect(
         x,
         canvasHeight - platformHeight,
@@ -480,7 +480,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   
       // Draw perfect area only if hero did not yet reach the platform
       if (sticks.last().x < x) {
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "yellow";
         ctx.fillRect(
           x + w / 2 - perfectAreaSize / 2,
           canvasHeight - platformHeight,
@@ -583,8 +583,8 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
   
     // Draw hills
-    drawHill(hill1BaseHeight, hill1Amplitude, hill1Stretch, "#95C629");
-    drawHill(hill2BaseHeight, hill2Amplitude, hill2Stretch, "#659F1C");
+    drawHill(hill1BaseHeight, hill1Amplitude, hill1Stretch, "#124e0d");
+    drawHill(hill2BaseHeight, hill2Amplitude, hill2Stretch, "#3c630c");
   
     // Draw trees
     trees.forEach((tree) => drawTree(tree.x, tree.color));

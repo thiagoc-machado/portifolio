@@ -96,10 +96,12 @@ body {
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
+	border-radius: 20px;
 }
 
 .popup form .btn-submit:hover {
-	background: rgba(94,125,227, .9);
+	background: rgba(7, 63, 247, 0.9);
+	border-radius: 20px;
 }
 
 /* POPUP 2 */
@@ -187,10 +189,12 @@ body {
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
+	border-radius: 20px;
 }
 
-.popup2 form .btn-submit2:hover {
-	background: rgba(94,125,227, .9);
+.popup form .btn-submit:hover {
+	background: rgba(7, 63, 247, 0.9);
+	border-radius: 20px;
 }
 
 /* POPUP 3 */
@@ -278,10 +282,12 @@ body {
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
+	border-radius: 20px;
 }
 
-.popup3 form .btn-submit2:hover {
-	background: rgba(94,125,227, .9);
+.popup form .btn-submit:hover {
+	background: rgba(7, 63, 247, 0.9);
+	border-radius: 20px;
 }
 
 /* POPUP 4 */
@@ -369,10 +375,12 @@ body {
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
+	border-radius: 20px;
 }
 
-.popup4 form .btn-submit4:hover {
-	background: rgba(94,125,227, .9);
+.popup form .btn-submit:hover {
+	background: rgba(7, 63, 247, 0.9);
+	border-radius: 20px;
 }
 
 
