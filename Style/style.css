@@ -175,6 +175,8 @@ ul.flags li img[title]:hover::before {
 #inicio .contenido header .contenido-header .redes li a:hover {
     color: var(--sec-color);
 }
+
+/* MAIN */
 #inicio .contenido .presentacion {
     max-width: 1100px;
     height: 100vh;
@@ -203,6 +205,105 @@ ul.flags li img[title]:hover::before {
     text-transform: uppercase;
     letter-spacing: 5px; 
 }
+
+#rotate-words-title {
+    vertical-align:text-top;
+    max-width:400px;
+    margin:auto;
+    padding: 0;
+    font-size:2.2em;
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vh;
+    text-align: center;
+  }
+  
+  #rotate-words-title span {
+    display:block;
+    height:70px;
+    font-size:.7em;
+    text-transform:lowercase;
+    opacity:.8;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  #rotate-words-title div {
+    position:absolute;
+    opacity:0;
+    overflow:hidden;
+    left:10vw;
+    width:80vw;
+    line-height:1.2em;
+    animation: rotate-word-title 10s;
+    opacity: 1;
+  }
+  
+  @keyframes rotate-word-title {
+    0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.5)}
+    100% { opacity: 1;  transform: translateX(0);filter:blur(0px);transform:scale(1)}
+
+}
+
+#rotate-words {
+    max-width:400px;
+    margin:auto;
+    padding: 120px 0;
+    font-size:2.2em;
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vh;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  #rotate-words span {
+    display:block;
+    height:70px;
+    font-size:.7em;
+    text-transform:lowercase;
+    opacity:.8;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  #rotate-words div {
+   position:absolute;
+   opacity:0;
+   overflow:hidden;
+   left:10vw;
+   width:80vw;
+   line-height:1.2em;
+   animation: rotate-word 32s linear infinite 0s;
+  }
+  
+  @keyframes rotate-word {
+      0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+      3% { opacity: 1;  transform: translateX(0);filter:blur(0px);transform:scale(.9)}
+      12% { opacity: 1; transform: translateX(0);filter:blur(0px);transform:scale(1)}
+      16% { opacity: 0; transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+      80% { opacity: 0}
+      100% { opacity: 0}
+  }
+  
+  #rotate-words div:nth-child(2) { animation-delay: 4s}
+  #rotate-words div:nth-child(3) { animation-delay: 8s}
+  #rotate-words div:nth-child(4) { animation-delay: 12s}
+  #rotate-words div:nth-child(5) { animation-delay: 16s}
+  #rotate-words div:nth-child(6) { animation-delay: 20s}
+  #rotate-words div:nth-child(7) { animation-delay: 24s}
+  #rotate-words div:nth-child(8) { animation-delay: 28s}
+  
+  @keyframes author {
+      0% { opacity: 0;  transform: translateY(100px);filter:blur(10px);transform: scaleY(2)}
+      20% { opacity:0; transform: translateY(200px);filter:blur(10px); transform: scaleY(2)}
+      30% { opacity:1; transform: translateY(0);filter:blur(0px);transform: scaleY(1)}
+      90% { opacity:1; transform: translateY(0);filter:blur(0px);transform: scaleY(.9)}
+      100% { opacity:0; transform: translateY(0);filter:blur(10px);transform: scale(2)}
+  }
+
+
+
+
+
 #inicio .contenido .presentacion h2 {
     font-size: 5vh;
     margin-bottom: 25px;
@@ -213,10 +314,14 @@ ul.flags li img[title]:hover::before {
     color: var(--sec-color);
 }
 #inicio .contenido .presentacion .descripcion {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-end;
     max-width: 700px;
     margin: 25px auto;
     font-size: 2vh;
     text-align: center;
+    vertical-align: bottom;
 }
 #inicio .contenido .presentacion a {
     text-decoration: none;
@@ -229,6 +334,7 @@ ul.flags li img[title]:hover::before {
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
+    vertical-align: bottom;
 }
 #inicio .contenido .presentacion a:hover {
     background-color: var(--sec-color);
