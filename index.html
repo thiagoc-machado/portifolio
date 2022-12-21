@@ -11,6 +11,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <!-- <link rel="stylesheet" href="/Style/comp.css"> -->
     <link rel="stylesheet" href="/Style/popup.css">
     <link rel="stylesheet" href="/Style/style.css">
     <title>Thiago Machado</title>
@@ -50,28 +51,16 @@
             </div>
         </header>
         <div class="presentacion">
+            <div id ='animation'></div>
             <div class="box" id="box">
-                <!-- <b class="bienvenida">Hello</b>
-                <h2>I'm <span>Thiago Machado</span>,<br> Fullstack Developer</h2> -->
-                <div id="rotate-words-title">
-                    <div>Thiago Machado<br />  <span>Fullstack developer</span></div>
+                <b class="bienvenida">Hello</b>
+                <h2>I'm <span>Thiago Machado</span>,<br>fullstack developer</h2>
+                <div class="word"></div>
+                <p class="descripcion" id="output"><br>
+                <div class="resume">
+                    <button id="btn_resume">My resume</button> 
+                    <!-- <a href="#portfolio">My resume</a> -->
                 </div>
-                <div id="rotate-words">  
-                    <!-- <div>Thiago Machado<br />  <span>Fullstack developer</span></div> -->
-                    <div>HTML CSS Javascript<br />  <span>Web development</span></div>
-                    <div>Python<br />  <span>Data Science</span></div>
-                    <div>Flask<br />  <span>Web Aplication</span></div>
-                    <div>MySql<br />  <span>Database</span></div>
-                    <div>Api / Json<br />  <span>Comunication</span></div>
-                    <div>BeautifulSoup<br />  <span>WebScrapping</span></div>
-                    <div>Python<br />  <span>Automation</span></div>
-                    <div>Flask<br />  <span>Web Aplication</span></div>
-                    </div>
-                <p class="descripcion">I am a fullstack developer with experience in web development and data automation with Python. I am Brazilian and have been living in Spain for 2 years. I am passionate about programming and enjoy challenging myself to learn new technologies and techniques.<br>
-                    Among the projects I have been working on recently, I highlight the development of web applications with Flask and the creation of APIs. I also have experience in HTML, CSS, and JavaScript.<br>
-                    Feel free to take a look at my projects and leave a message. And if you're feeling brave, I challenge you to put your name in the 'Hall of Fame' of my game, located at the bottom of the page. <br>I hope you enjoy my work!</p>
-                <a href="#portfolio">My resume</a>
-            </div>
         </div>
     </div>
 </section>
@@ -123,7 +112,7 @@
             <div class="popup" id="popup">
                 <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
                 <h3>CAP 2022</h3>
-                <h4>This web application I present is a study tool designed especially for those who need to pass the CAP exam in Spain. It performs web scraping of the questions from the website of the Spanish Ministry of Transport, selects the links to the topics of the questions, accesses each one of them and downloads all the questions, creating a file with the raw data.<br>
+                <h4 id="poput1-txt">This web application I present is a study tool designed especially for those who need to pass the CAP exam in Spain. It performs web scraping of the questions from the website of the Spanish Ministry of Transport, selects the links to the topics of the questions, accesses each one of them and downloads all the questions, creating a file with the raw data.<br>
                     The data is organized and presented to the user randomly, allowing you to test your knowledge in a challenging and efficient way. In addition, the application has a system for counting correct answers, errors and unanswered questions, which is carried out using javascript and saved in cookies in the user's browser so you don't lose your progress.<br>
                     I am still working on the development of this tool and we plan to implement new features, such as organizing the questions by topic and creating a login system to control users. I believe that these improvements will be fundamental in making the application even more useful and efficient for those who need to prepare for the CAP exam..</h4>
                 <form action="https://cap-empc.onrender.com/" target="_blank">
@@ -135,7 +124,7 @@
             <div class="popup2" id="popup2">
                 <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
                 <h3>Triac Soluções em eletrônica</h3>
-                <h4>The home appliance maintenance company's website was developed with a combination of HTML, CSS, and JavaScript to ensure an optimized and attractive user experience.<br>
+                <h4 id="poput2-txt">The home appliance maintenance company's website was developed with a combination of HTML, CSS, and JavaScript to ensure an optimized and attractive user experience.<br>
                     The website's structure was carefully designed to be intuitive and easy to navigate, with a responsive menu that perfectly adapts to any screen size. In addition, we included a field for sending messages so that you can contact us quickly and easily, as well as photos with descriptions and animations to make your experience more pleasant and interactive.<br>
                     We use the most updated technologies to ensure that the website has an optimized and fast performance, and we are always looking for ways to further improve the user's navigation experience.</h4>
                 <form action="https://triac.info/" target="_blank">
@@ -147,7 +136,7 @@
             <div class="popup3" id="popup3">
                 <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
                 <h3>This portfolio</h3>
-                <h4>This portfolio was developed with CSS and JavaScript animations, has a responsive interface and a contact field with email sending capability. In addition, it features a game developed entirely with pure JavaScript, which uses an API to save and display the "hall of fame" ranking. It has also been adapted to work with mouse and touch screens.<br>
+                <h4 id="poput3-txt">This portfolio was developed with CSS and JavaScript animations, has a responsive interface and a contact field with email sending capability. In addition, it features a game developed entirely with pure JavaScript, which uses an API to save and display the "hall of fame" ranking. It has also been adapted to work with mouse and touch screens.<br>
                     Come test your skills and put your name in the "Hall of Fame"!</h4>
                 <form action="#" target="_blank">
                     <!-- <input type="submit" class="btn-submit3" value="Access the website."> -->
@@ -158,7 +147,7 @@
             <div class="popup4" id="popup4">
                 <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
                 <h3>Comming soom</h3>
-                <h4>Soon there will be another project here</h4>
+                <h4 id="poput4-txt">Soon there will be another project here</h4>
                 <form action="#" target="_blank">
                     <!-- <input type="submit" class="btn-submit4" value="Access the website."> -->
                 </form>
@@ -228,10 +217,10 @@
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(102,178,255)" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(51,153,255)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,128,255)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,102,204)" />
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#8ebdb6" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="#3e838c" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#195e63" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#063940" />
         </g>
         </svg>
     </div>

@@ -82,11 +82,11 @@ Array.prototype.last = function () {
   // The background moves slower than the hero
   const backgroundSpeedMultiplier = 0.2;
   
-  const hill1BaseHeight = 100;
+  const hill1BaseHeight = 200;
   const hill1Amplitude = 10;
   const hill1Stretch = 1;
-  const hill2BaseHeight = 70;
-  const hill2Amplitude = 20;
+  const hill2BaseHeight = 150;
+  const hill2Amplitude = 30;
   const hill2Stretch = 0.5;
   
   const stretchingSpeed = 4; // Milliseconds it takes to draw a pixel
@@ -583,7 +583,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
     // Draw sky
     var gradient = ctx.createLinearGradient(0, 0, 0, window.innerHeight);
     gradient.addColorStop(0, "#1b1999");
-    gradient.addColorStop(1, "#8d0000");
+    gradient.addColorStop(1, "#8d3400");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
   

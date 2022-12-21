@@ -83,6 +83,9 @@ body {
 	text-align: center;
 	border: 1px solid #BBBBBB;
 }
+#poput1-txt{
+	font-size: 2.0vh;
+}
 
 .popup form .btn-submit {
 	padding: 0 20px;
@@ -175,6 +178,9 @@ body {
 	line-height: 52px;
 	text-align: center;
 	border: 1px solid #BBBBBB;
+}
+#poput2-txt{
+	font-size: 2vh;
 }
 
 .popup2 form .btn-submit2 {
@@ -269,6 +275,9 @@ body {
 	text-align: center;
 	border: 1px solid #BBBBBB;
 }
+#poput3-txt{
+	font-size: 2vh;
+}
 
 .popup3 form .btn-submit2 {
 	padding: 0 20px;
@@ -361,6 +370,9 @@ body {
 	line-height: 52px;
 	text-align: center;
 	border: 1px solid #BBBBBB;
+}
+#poput4-txt{
+	font-size: 2vh;
 }
 
 .popup4 form .btn-submit4 {
