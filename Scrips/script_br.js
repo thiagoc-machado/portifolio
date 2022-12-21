@@ -20,7 +20,26 @@ const btn = document.getElementById('button');
   });
 
 
+      // Titulo efecto typping 
+const text = "Sou um desenvolvedor fullstack com experiência em desenvolvimento web e automação de dados com Python. Vivo na Espanha há 2 anos. Sou apaixonado por programação e gosto de desafiar-me a aprender novas tecnologias e técnicas. Entre os projetos que tenho trabalhado recentemente, destaco o desenvolvimento de aplicativos web com Flask e a criação de APIs. Também tenho experiência em HTML, CSS e JavaScript. Sinta-se à vontade para dar uma olhada nos meus projetos e deixar uma mensagem. E se você se sentir corajoso, desafio-o a colocar o seu nome no 'Hall da Fama' do meu jogo, localizado no final da página. Espero que goste do meu trabalho!";
 
+const typingInterval = 50;
+const outputElement = document.getElementById("output");
+let index = 0;
+
+const type = () => {
+  const char = text[index];
+  outputElement.innerHTML += char;
+  index++;
+
+  if (index >= text.length) {
+    clearInterval(interval);
+  }
+};
+
+const interval = setInterval(type, typingInterval);
+
+  // MENU RESPONSIBLE
 function seleccionar(link) {
   var opciones = document.querySelectorAll('#links  a');
   opciones[0].className = "";
@@ -74,10 +93,31 @@ Array.prototype.last = function () {
   // Configuration
   const canvasWidth = 375;
   const canvasHeight = 1100;
-  const platformHeight = 200;
+  // const platformHeight = 200;
   const heroDistanceFromEdge = 10; // While waiting
   const paddingX = 100; // The waiting position of the hero in from the original canvas size
   const perfectAreaSize = 10;
+
+  if (window.innerHeight < window.innerWidth){
+
+    if (window.innerWidth < 500) {
+      var platformHeight = 100;
+    } else if (window.innerWidth < 600) {
+      var platformHeight = 200;
+    } else {
+      var platformHeight = 400;
+    }
+console.log("Width = " + window.innerWidth)
+console.log("Heigth = " + window.innerHeight)
+  }else {
+    if (window.innerWidth < 600) {
+      var platformHeight = 30;
+    } else if (window.innerWidth < 500) {
+      var platformHeight = 150;
+    } else {
+      var platformHeight = 10;
+    }
+  }
   
   // The background moves slower than the hero
   const backgroundSpeedMultiplier = 0.2;
@@ -582,7 +622,7 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
   function drawBackground() {
     // Draw sky
     var gradient = ctx.createLinearGradient(0, 0, 0, window.innerHeight);
-    gradient.addColorStop(0, "#1b1999");
+    gradient.addColorStop(0, "#171730");
     gradient.addColorStop(1, "#8d3400");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
