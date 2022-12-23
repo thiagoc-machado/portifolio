@@ -202,24 +202,25 @@ fetch("https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43/latest")
 
   function handleFormSubmit(event) {
     event.preventDefault();
+    const namesave = document.getElementById("nameSave")
     const name = formElement.elements['nameSave'].value;
     const value = score;
-    addItem(name, value);
-    savePlacarElement.style.display = "none";
+    if(name != ""){
+      addItem(name, value);
+      savePlacarElement.style.display = "none";
+      var listaJSON = JSON.stringify(listItems);
+      console.log(listaJSON)
+      let req = new XMLHttpRequest();
 
-    var listaJSON = JSON.stringify(listItems);
-    console.log(listaJSON)
-    let req = new XMLHttpRequest();
-
-    req.onreadystatechange = () => {
-      if (req.readyState == XMLHttpRequest.DONE) {
-        console.log(req.responseText);
-      }
-    };
-    req.open("PUT", "https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43", true);
-    req.setRequestHeader("Content-Type", "application/json");
-    req.send(listaJSON);
-
+      req.onreadystatechange = () => {
+        if (req.readyState == XMLHttpRequest.DONE) {
+          console.log(req.responseText);
+        }
+      };
+      req.open("PUT", "https://api.jsonbin.io/v3/b/639b92eb15ab31599e1d5c43", true);
+      req.setRequestHeader("Content-Type", "application/json");
+      req.send(listaJSON);
+    }
   };
 
 
