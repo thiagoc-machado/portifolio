@@ -21,7 +21,7 @@ const btn = document.getElementById('button');
 
   // Titulo efecto typping 
 // Define o texto a ser digitado
-const text = "I am a fullstack developer with experience in web development and data automation with Python. I am Brazilian and have been living in Spain for 2 years. I am passionate about programming and enjoy challenging myself to learn new technologies and techniques. Among the projects I have been working on recently, I highlight the development of web applications with Flask and the creation of APIs. I also have experience in HTML, CSS, and JavaScript. Feel free to take a look at my projects and leave a message. And if you're feeling brave, I challenge you to put your name in the 'Hall of Fame' of my game, located at the bottom of the page. I hope you enjoy my work!";
+const text = "I am a fullstack developer with experience in web development and data automation with Python. I am passionate about programming and enjoy challenging myself to learn new technologies and techniques. Among the projects I have been working on recently, I highlight the development of web applications with Flask and the creation of APIs. I also have experience in HTML, CSS, and JavaScript. Feel free to take a look at my projects and leave a message. And if you're feeling brave, I challenge you to put your name in the 'Hall of Fame' of my game, located at the bottom of the page. I hope you enjoy my work!";
 
 const typingInterval = 50;
 const outputElement = document.getElementById("output");

@@ -20,7 +20,7 @@ const btn = document.getElementById('button');
   });
 
       // Titulo efecto typping 
-      const text = "Soy un desarrollador fullstack con experiencia en desarrollo web y automatización de datos con Python. Llevo viviendo en España durante 2 años. Me apasiona la programación y disfruto desafiándome a aprender nuevas tecnologías y técnicas. Entre los proyectos en los que he estado trabajando recientemente, destaco el desarrollo de aplicaciones web con Flask y la creación de APIs. También tengo experiencia en HTML, CSS y JavaScript. No dude en echar un vistazo a mis proyectos y dejar un mensaje. Y si se siente valiente, lo reto a poner su nombre en el 'Hall of Fame' de mi juego, ubicado al final de la página. ¡Espero que disfrute de mi trabajo!";
+      const text = "Soy un desarrollador fullstack con experiencia en desarrollo web y automatización de datos con Python. Me apasiona la programación y disfruto desafiándome a aprender nuevas tecnologías y técnicas. Entre los proyectos en los que he estado trabajando recientemente, destaco el desarrollo de aplicaciones web con Flask y la creación de APIs. También tengo experiencia en HTML, CSS y JavaScript. No dude en echar un vistazo a mis proyectos y dejar un mensaje. Y si se siente valiente, lo reto a poner su nombre en el 'Hall of Fame' de mi juego, ubicado al final de la página. ¡Espero que disfrute de mi trabajo!";
 
       const typingInterval = 50;
       const outputElement = document.getElementById("output");
