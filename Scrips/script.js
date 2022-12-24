@@ -102,26 +102,28 @@ Array.prototype.last = function () {
   const paddingX = 100; // The waiting position of the hero in from the original canvas size
   const perfectAreaSize = 10;
 
-  if (window.innerHeight < window.innerWidth){
-
-    if (window.innerWidth < 500) {
-      var platformHeight = 100;
-    } else if (window.innerWidth < 600) {
-      var platformHeight = 200;
-    } else {
-      var platformHeight = 400;
+  if( navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)
+  ){
+    if (window.innerWidth > window.innerHeight){
+      var platformHeight = 600;
+      console.log("Mobile mode deitado")
+    }else{
+      var platformHeight = 0;
+      console.log("Mobile mode de pé")
     }
-console.log("Width = " + window.innerWidth)
-console.log("Heigth = " + window.innerHeight)
-  }else {
-    if (window.innerWidth < 600) {
-      var platformHeight = 30;
-    } else if (window.innerWidth < 500) {
-      var platformHeight = 150;
-    } else {
-      var platformHeight = 10;
-    }
+  }else{
+    var platformHeight = 400;
   }
+    
+  console.log("Width = " + window.innerWidth)
+  console.log("Heigth = " + window.innerHeight)
+
+  
 
   // The background moves slower than the hero
   const backgroundSpeedMultiplier = 0.2;

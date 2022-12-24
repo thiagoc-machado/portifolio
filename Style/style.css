@@ -571,7 +571,7 @@ footer a {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 900px){
+@media all and (max-width: 980px) and (orientation: portrait) {
 
     #inicio .contenido header .contenido-header {
         margin-top: 20px;
@@ -644,6 +644,7 @@ footer a {
     #inicio .contenido .presentacion .bienvenida {
         font-size: 1vh;
         margin-bottom: 10px;
+        color: blue;
     }
     #inicio .contenido .presentacion h2 {
         font-size: 1vh;
@@ -692,16 +693,17 @@ footer a {
     }
     
     #restart {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 150px;
     }
     
     #perfect {
         margin-bottom: 500px;
     }
     #action {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         margin-bottom: 150px;
     }
     #placar{
@@ -741,26 +743,27 @@ footer a {
 
 }
 
-@media only screen and (max-height: 800px) and (max-width: 800px){
+@media all and (max-width: 980px) and (orientation: landscape) {
 
     .container {
         border-bottom: 20px;
     }
     #inicio .contenido header .contenido-header {
-        margin-top: 20px;
+        margin-top: 0px;
+        font-size: 2vh;
     }
     .redes {
-        display: none;
+        display:none;
     }
     nav {
-        display: none;
+        display:none;
     }
     nav.responsive {
         display: block;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
-        position: absolute;
-        top: 100px;
+        position:absolute;
+        top: 0px;
         left: 0;
         padding: 10px 0;
     }
@@ -817,10 +820,10 @@ footer a {
         color: yellow;
     }
     #inicio .contenido .presentacion h2 {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     #inicio .contenido .presentacion h2 span {
-        font-size: 3vh;
+        font-size: 2.5vh;
         color: var(--sec-color);
     }
     #inicio .contenido .presentacion .descripcion {
@@ -924,32 +927,35 @@ footer a {
 
     #introduction {
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 3vh;
     }
 
     #restart {
+        width: 150px;
+        height: 150px;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 2vh;
     }
     #gameover{
         font-weight: 700;
-        font-size: 2em;
+        font-size: 3vh;
+        margin-bottom: 280px;
     }
 
     #perfect {
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 3vh;
     }
     #action {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 2vh;
     }
     #placar{
-        margin-top: -150px;
+        margin-bottom: 170px;
         right: 20px;
-        font-size: 1em;
+        font-size: 2vh;
     }
     #hiscore{
         text-decoration: none;
@@ -959,7 +965,7 @@ footer a {
     }
     #saveplacar{
 
-        font-size: 1em;
+        font-size: 3vh;
     }
     #saveBtn{
         border-radius: 20px;
@@ -968,15 +974,16 @@ footer a {
         padding:20px;
         width: 100%;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 3vh;
         align-items: center;
     }
     #nameSave{
-        font-size: 1.5em;
+        font-size: 3vh;
     }
     #titulo{
+        margin-bottom: 400px;
         font-weight: 700;
-        font-size: 2em;
+        font-size: 4vh;
     }
 
         /* FOOTER */
@@ -990,7 +997,11 @@ footer a {
         color: rgb(255, 255, 255);
         display: inline-block;
         margin-top: -30px;
-        font-size: 26px;
+        font-size: 4vh;
+        margin-right: 10px;
+    }
+    #footer-text{
+        font-size: 2vh;
     }
 
     .flex { /*Flexbox for containers*/
@@ -998,6 +1009,7 @@ footer a {
         justify-content: center;
         align-items: center;
         text-align: center;
+        font-size: 20px;
     }
     
     .waves {
