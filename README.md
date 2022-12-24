@@ -1,0 +1,2 @@
+This portfolio was developed with CSS and JavaScript animations, has a responsive interface and a contact field with email sending capability. In addition, it features a game developed entirely with pure JavaScript, which uses an API to save and display the "hall of fame" ranking. It has also been adapted to work with mouse and touch screens.
+Come test your skills and put your name in the "Hall of Fame"!
