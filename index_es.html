@@ -43,7 +43,7 @@
                 </div>
                 <!-- icono de las redes sociales -->
                 <ul class="redes"id="redes">
-                    <li><a href="https://www.linkedin.com/in/thiago-carvalho-machado/" target="_blank"><i class="fa-brands fa-linkedin" id="redes1"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/thiagomach/?locale=es_ES" target="_blank"><i class="fa-brands fa-linkedin" id="redes1"></i></a></li>
                     <li><a href="https://github.com/thiagoc-machado" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
                     <li><a href="https://www.instagram.com/thiagoc.machado/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
                 </ul>
@@ -57,7 +57,7 @@
                 <div class="word"></div>
                 <p class="descripcion" id="output"><br>
                 <div class="resume">
-                    <button id="btn_resume">Mi currículum</button> 
+                    <a href="/docs/CV-es.pdf" target="_blank" id="btn_resume">Mi currículum</a> 
                     <!-- <a href="#portfolio">My resume</a> -->
                 </div>
             </div>
@@ -94,15 +94,15 @@
             <a><img src="img/proyecto3.jpg"  alt="" id="proj3-popup" class="proj3-popup" ></a>
             <div class="info">
                 <h4>Este portfolio</h4>
-                <p>built with css animations and javascript features with a pure javascript game at the end</p>
+                <p>Desarrollado completamente del lado del cliente con JavaScript, CSS y HTML. Con un juego al final con un marcador que guarda los datos a través de una API.</p>
             </div>
         </div>
         <div class="proyecto">
             <div class="overlay"></div>
             <a><img src="img/proyecto4.jpg"  alt="" id="proj4-popup" class="proj4-popup" ></a>
             <div class="info">
-                <h4>En breve</h4>
-                <p>Pronto habrá otro proyecto aquí.</p>
+                <h4>E-Wok</h4>
+                <p>Aplicación web para restaurantes que permite a los clientes realizar pedidos. Desarrollada con Flask en Python y HTML, CSS, JavaScript y SQLite</p>
             </div>
         </div>
     </div>
@@ -111,45 +111,41 @@
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             <h3>CAP 2022</h3>
-            <h4>Esta aplicación web que presento es una herramienta de estudio diseñada especialmente para aquellos que necesitan pasar el examen CAP. Realiza web scraping de las preguntas del sitio web del Ministerio de Transporte de España, selecciona los enlaces a los temas de las preguntas, accede a cada uno de ellos y descarga todas las preguntas, creando un archivo con los datos brutos.<br>
+            <h4 id="poput1-txt">Esta aplicación web que presento es una herramienta de estudio diseñada especialmente para aquellos que necesitan pasar el examen CAP. Realiza web scraping de las preguntas del sitio web del Ministerio de Transporte de España, selecciona los enlaces a los temas de las preguntas, accede a cada uno de ellos y descarga todas las preguntas, creando un archivo con los datos brutos.<br>
                 Los datos se organizan y se presentan al usuario de forma aleatoria, lo que le permite poner a prueba sus conocimientos de manera desafiante y eficiente. Además, la aplicación cuenta con un sistema para contar las respuestas correctas, los errores y las preguntas sin responder, que se realiza mediante javascript y se guarda en cookies en el navegador del usuario para que no pierda su progreso.<br>
                 Todavía estoy trabajando en el desarrollo de esta herramienta y planeamos implementar nuevas funcionalidades, como la organización de las preguntas por tema y la creación de un sistema de inicio de sesión para controlar a los usuarios. Creo que estas mejoras serán fundamentales para hacer que la aplicación sea aún más útil y eficiente para aquellos que necesitan prepararse para el examen CAP.</h4>
-            <form action="https://cap-empc.onrender.com/" target="_blank">
-                <input type="submit" class="btn-submit" value="Acceda al sitio web.">
-            </form>
+                <a href="https://cap-empc.onrender.com/" target="_blank"><button class="btn-submit1">Acceda al sitio web</button></a>
+                <a href="https://github.com/thiagoc-machado/cap2022" target="_blank"><button class="btn-submit1">Projecto en Github</button></a>
         </div>
     </div>
     <div class="overlay2" id="overlay2">
         <div class="popup2" id="popup2">
             <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fas fa-times"></i></a>
             <h3>Triac Soluções em eletrônica</h3>
-            <h4>Este sitio web de la empresa de mantenimiento de electrodomésticos ha sido desarrollado con la combinación de HTML, CSS y JavaScript para garantizar una experiencia de usuario optimizada y atractiva.
+            <h4 id="poput2-txt">Este sitio web de la empresa de mantenimiento de electrodomésticos ha sido desarrollado con la combinación de HTML, CSS y JavaScript para garantizar una experiencia de usuario optimizada y atractiva.
                 La estructura del sitio ha sido cuidadosamente planificada para ser intuitiva y fácil de navegar, con un menú responsivo que se adapta perfectamente a cualquier tamaño de pantalla. Además, hemos incluido un campo para el envío de mensajes para que pueda ponerse en contacto con nosotros de manera rápida y fácil, así como fotos con descripciones y animaciones para hacer su experiencia más agradable e interactiva.
                 Utilizamos las tecnologías más actualizadas para garantizar que el sitio tenga un rendimiento optimizado y rápido, y siempre estamos buscando formas de mejorar aún más la experiencia de navegación del usuario.</h4>
-            <form action="https://triac.info/" target="_blank">
-                <input type="submit" class="btn-submit2" value="Acceda al sitio web.">
-            </form>
+                <a href="https://triac.info/" target="_blank"><button class="btn-submit2">Acceda al sitio web</button></a>
+                <a href="https://github.com/thiagoc-machado/triac-web" target="_blank"><button class="btn-submit2">Projecto en Github</button></a>
         </div>
     </div>
     <div class="overlay3" id="overlay3">
         <div class="popup3" id="popup3">
             <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="fas fa-times"></i></a>
             <h3>Este portafolio</h3>
-            <h4>Este portafolio fue desarrollado con animaciones CSS y JavaScript, tiene una interfaz responsiva y un campo de contacto con la capacidad de enviar correos electrónicos. Además, cuenta con un juego desarrollado completamente con JavaScript puro, que utiliza una API para guardar y mostrar el ranking del "hall de la fama". También ha sido adaptado para funcionar con mouse y pantallas táctiles.<br>
+            <h4 id="poput3-txt">Este portafolio fue desarrollado con animaciones CSS y JavaScript, tiene una interfaz responsiva y un campo de contacto con la capacidad de enviar correos electrónicos. Además, cuenta con un juego desarrollado completamente con JavaScript puro, que utiliza una API para guardar y mostrar el ranking del "hall de la fama". También ha sido adaptado para funcionar con mouse y pantallas táctiles.<br>
                 ¡Ven a probar tus habilidades y poner tu nombre en el "Hall de la fama"!</h4>
-            <form action="https://triac.info/" target="_blank">
-                <!-- <input type="submit" class="btn-submit3" value="Access the website."> -->
-            </form>
+                <a href="https://github.com/thiagoc-machado/portifolio" target="_blank"><button class="btn-submit3">Projecto en Github</button></a>
         </div>
     </div>
     <div class="overlay4" id="overlay4">
         <div class="popup4" id="popup4">
             <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
-            <h3>En breve</h3>
-            <h4 id="poput4-txt">Pronto habrá otro proyecto aquí.</h4>
-            <form action="#" target="_blank">
-                <!-- <input type="submit" class="btn-submit4" value="Access the website."> -->
-            </form>
+            <h3>E-Wok</h3>
+            <h4 id="poput4-txt">Este aplicativo web fue desarrollado con Python y el framework Flask para facilitar el proceso de pedidos de un restaurante chinés. <br>Utilizamos HTML, CSS y JavaScript para el frontend y almacenamos los datos de los pedidos en una base de datos SQLite. <br>Mostramos la lista de pedidos para la preparación de los platos en el endpoint del restaurante y ofrecemos un sistema de descuento por repetición de pedidos y una opción de filtro por nombre de cliente.</h4>
+            <a href="https://e-wok.onrender.com" target="_blank"><button class="btn-submit4"> Cliente Website</button></a>
+            <a href="https://e-wok.onrender.com/endpoint" target="_blank"><button class="btn-submit4"> EndPoint Website</button></a>
+            <a href="https://github.com/thiagoc-machado/aLSuh1iIWKXxxGRJJ121" target="_blank"><button class="btn-submit4">Projecto en Github</button></a>
         </div>
     </div>
 </section>

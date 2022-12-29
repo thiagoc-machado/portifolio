@@ -1,447 +1,474 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background: #fff;
-	font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
 }
-
 
 /* POPUP 1 */
 
-
 .overlay {
-	background: rgba(0,0,0,.8);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
 }
 
 .overlay.active {
-	visibility: visible;
+  visibility: visible;
 }
 
 .popup {
-	background: #ffffff;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	text-align: center;
-	width: 700px;
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0;
 }
 
 .popup .btn-cerrar-popup {
-	font-size: 36px;
-	line-height: 36px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #680000;
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  text-align: right;
+  transition: 0.3s ease all;
+  color: #680000;
 }
 
 .popup .btn-cerrar-popup:hover {
-	color: #000;
+  color: #000;
 }
 
 .popup h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
 }
 
 .popup h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  opacity: 0;
 }
 
 .popup form .proj1-inputs {
-	opacity: 0;
+  opacity: 0;
 }
 
 .popup form .proj1-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
 }
-#poput1-txt{
-	font-size: 2.0vh;
-}
-
-.popup form .btn-submit {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	border-radius: 20px;
+#poput1-txt {
+  font-size: 2vh;
 }
 
-.popup form .btn-submit:hover {
-	background: rgba(7, 63, 247, 0.9);
-	border-radius: 20px;
+.popup .btn-submit1 {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #41579e;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 20px;
+}
+
+.popup .btn-submit1:hover {
+  background: rgba(39, 206, 89, 0.9);
+  border-radius: 20px;
 }
 
 /* POPUP 2 */
 
 .overlay2 {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
 }
 
 .overlay2.active {
-	visibility: visible;
+  visibility: visible;
 }
 
 .popup2 {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	text-align: center;
-	width: 600px;
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0;
 }
 
 .popup2 .btn-cerrar-popup2 {
-	font-size: 36px;
-	line-height: 36px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #680000;
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  text-align: right;
+  transition: 0.3s ease all;
+  color: #680000;
 }
 
 .popup2 .btn-cerrar-popup2:hover {
-	color: #000;
+  color: #000;
 }
 
 .popup2 h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
 }
 
 .popup2 h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  opacity: 0;
 }
 
 .popup2 form .proj2-inputs {
-	opacity: 0;
+  opacity: 0;
 }
 
 .popup2 form .proj2-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
 }
-#poput2-txt{
-	font-size: 2vh;
-}
-
-.popup2 form .btn-submit2 {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	border-radius: 20px;
+#poput2-txt {
+  font-size: 2vh;
 }
 
-.popup form .btn-submit:hover {
-	background: rgba(7, 63, 247, 0.9);
-	border-radius: 20px;
+.popup2 .btn-submit2 {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #41579e;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 20px;
+}
+
+.popup2 .btn-submit2:hover {
+  background: rgba(39, 206, 89, 0.9);
+  border-radius: 20px;
 }
 
 /* POPUP 3 */
 
 .overlay3 {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
 }
 
 .overlay3.active {
-	visibility: visible;
+  visibility: visible;
 }
 
 .popup3 {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	width: 600px;
-	text-align: center;
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  width: 600px;
+  text-align: center;
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0;
 }
 
 .popup3 .btn-cerrar-popup3 {
-	font-size: 36px;
-	line-height: 36px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #680000;
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  text-align: right;
+  transition: 0.3s ease all;
+  color: #680000;
 }
 
 .popup3 .btn-cerrar-popup2:hover {
-	color: #000;
+  color: #000;
 }
 
 .popup3 h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
 }
 
 .popup3 h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  opacity: 0;
 }
 
 .popup3 form .proj2-inputs {
-	opacity: 0;
+  opacity: 0;
 }
 
 .popup3 form .proj2-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
 }
-#poput3-txt{
-	font-size: 2vh;
-}
-
-.popup3 form .btn-submit2 {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	border-radius: 20px;
+#poput3-txt {
+  font-size: 2vh;
 }
 
-.popup form .btn-submit:hover {
-	background: rgba(7, 63, 247, 0.9);
-	border-radius: 20px;
+.popup3 .btn-submit3 {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #41579e;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 20px;
+}
+
+.popup3 .btn-submit3:hover {
+  background: rgba(39, 206, 89, 0.9);
+  border-radius: 20px;
 }
 
 /* POPUP 4 */
 
 .overlay4 {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
 }
 
 .overlay4.active {
-	visibility: visible;
+  visibility: visible;
 }
 
 .popup4 {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	text-align: center;
-	width: 600px;
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  transition: 0.3s ease all;
+  transform: scale(0.7);
+  opacity: 0;
 }
 
 .popup4 .btn-cerrar-popup4 {
-	font-size: 36px;
-	line-height: 36px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #680000;
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  text-align: right;
+  transition: 0.3s ease all;
+  color: #680000;
 }
 
 .popup4 .btn-cerrar-popup4:hover {
-	color: #000;
+  color: #000;
 }
 
 .popup4 h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
 }
 
 .popup4 h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  opacity: 0;
 }
 
 .popup4 form .proj4-inputs {
-	opacity: 0;
+  opacity: 0;
 }
 
 .popup4 form .proj4-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
 }
-#poput4-txt{
-	font-size: 2vh;
-}
-
-.popup4 form .btn-submit4 {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	border-radius: 20px;
+#poput4-txt {
+  font-size: 2vh;
 }
 
-.popup form .btn-submit:hover {
-	background: rgba(7, 63, 247, 0.9);
-	border-radius: 20px;
+.popup4 .btn-submit4 {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: #fff;
+  background: #41579e;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 20px;
 }
 
+.popup4 .btn-submit4:hover {
+  background: rgba(39, 206, 89, 0.9);
+  border-radius: 20px;
+}
 
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
-.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup.active h3 {
+  animation: entradaTitulo 0.8s ease 0.5s forwards;
+}
+.popup.active h4 {
+  animation: entradaSubtitulo 0.8s ease 0.5s forwards;
+}
 
-.popup2.active {	transform: scale(1); opacity: 1; }
-.popup2.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup2.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup2.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup2.active h3 {
+  animation: entradaTitulo 0.8s ease 0.5s forwards;
+}
+.popup2.active h4 {
+  animation: entradaSubtitulo 0.8s ease 0.5s forwards;
+}
 
-.popup3.active {	transform: scale(1); opacity: 1; }
-.popup3.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup3.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup3.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup3.active h3 {
+  animation: entradaTitulo 0.8s ease 0.5s forwards;
+}
+.popup3.active h4 {
+  animation: entradaSubtitulo 0.8s ease 0.5s forwards;
+}
 
-.popup4.active {	transform: scale(1); opacity: 1; }
-.popup4.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup4.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
-
-
+.popup4.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup4.active h3 {
+  animation: entradaTitulo 0.8s ease 0.5s forwards;
+}
+.popup4.active h4 {
+  animation: entradaSubtitulo 0.8s ease 0.5s forwards;
+}
 
 @keyframes entradaTitulo {
-	from {
-		opacity: 0;
-		transform: translateY(-25px);
-	}
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
 
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes entradaSubtitulo {
-	from {
-		opacity: 0;
-		transform: translateY(25px);
-	}
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
 
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes entradaInputs {
-	from { opacity: 0; }
-	to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
