@@ -1,7 +1,7 @@
 My Portfolio
 ============
 
-This portfolio is a web application developed using HTML, CSS and JavaScript. It features a responsive design and a contact form with email sending functionality. The highlight of this portfolio is a game, which is developed using pure JavaScript. This game uses an API to save and display the "Hall of Fame" ranking of the players. The game is compatible with both mouse and touch screens.
+This portfolio is developed using HTML, CSS and JavaScript. It features a responsive design and a contact form with email sending functionality. The highlight of this portfolio is a game, which is developed using pure JavaScript. This game uses an API to save and display the "Hall of Fame" ranking of the players. The game is compatible with both mouse and touch screens.
 
 Installation
 ------------
